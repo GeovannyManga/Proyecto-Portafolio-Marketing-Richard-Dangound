@@ -1,0 +1,496 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Rubik:wght@400;500;700&display=swap');
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+font-family: 'Rubik', sans-serif;
+
+
+ 
+}
+
+#app{
+  background-color: #eff0f5;
+  height: 100em;
+}
+
+
+  .Nav {
+    margin-top: 22px;
+    width: 90%;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.032);
+    backdrop-filter: blur(40px); 
+    border-radius: 12px;
+    left: 50%; /* Desplazamos el elemento a la mitad del ancho del viewport */
+    transform: translateX(-50%); /* Lo movemos hacia la izquierda en la mitad de su propio ancho */
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+  
+}
+
+.div1-nav{
+  border-radius: 8px;
+  background-color: red;
+  width: 70px;
+  height: 50%;
+  display: flex;
+  background-color: white;
+  font-size: 8px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 5px;
+  overflow: hidden;
+}
+
+.imagen-nav-logo{
+  width: 22px;
+  height: 20px;
+}
+
+
+.div2-nav{
+  border-radius: 8px;
+  color: white;
+  width: 100px;
+  height: 50%;
+  display: flex;
+  background-color: #10100F;
+  font-size: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 1.5px;
+
+  
+}
+
+.image-meet {
+  width: 44px;
+  height: 40px;
+  background-image: url(./Image/zoom-meeting-logo-transparent-png-21\ -\ copia.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  margin-top: -3px;
+
+}
+
+
+.reunion-virtual{
+  font-size: 8px;
+}
+
+.meet{
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.menu{
+  width: 50px;
+  height: 50px;
+  background-image: url(./Image/menu.png);
+  background-size: cover;
+  background-color:white;
+  border-radius: 10px;
+}
+
+
+
+
+.image-abstracta{
+  margin-top: 20%;
+  width: 100%;
+  height: 14%;
+}
+
+.content-h1-title{
+  width: 100%;
+  height: 100px;
+ justify-items: center;
+ display: flex;
+
+}
+
+.h1-title{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+
+  font-size: 26px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.h1-title span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+.div-span-leer-mas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 38px;
+  background: rgb(64,99,255);
+background: linear-gradient(90deg, rgba(64,99,255,1) 7%, rgba(0,92,254,1) 90%);
+  border-radius: 6px;
+  margin: auto;
+  margin-top: 18px;
+  justify-content: space-evenly;
+}
+
+.div-span-leer-mas img {
+  width: 38px; /* Ajusta el ancho de la imagen */
+  height: 16px; /* Ajusta la altura de la imagen */
+ 
+}
+
+.div-span-leer-mas span {
+  color: white;
+  font-size: 14px; /* Ajusta el tamaño de fuente del span */
+}
+
+
+.gafas{
+  width: 42px;
+  height: 16px;
+}
+
+
+.seccion-of-icons-social-media{
+  width: 100%;
+  margin-top: 20px;
+  
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+
+  flex-direction: row;
+ 
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.social-media-icon{
+ width: 30px;
+ height: 30px;
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position: center;
+ margin-top: 100px;
+
+ 
+}
+
+#icons1{
+  background-image: url(./Image/imagenes-32.png);
+
+}
+
+#icons2{
+  background-image: url(./Image/imagenes-33.png);
+
+}
+#icons3{
+  background-image: url(./Image/imagenes-34.png);
+
+}
+#icons4{
+  background-image: url(./Image/imagenes-35.png);
+
+}
+#icons5{
+  background-image: url(./Image/imagenes-36.png);
+}
+
+#section-themes{
+  width: 100px;
+  height: 100px;
+}
+
+.arrow{
+  margin-top: -50px;
+  width: 140px;
+  height: 160px;
+  background-image: url(./Image/boton_a1-02.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+text-align: center;
+padding-top: 18%;
+padding-right: 10%;
+}
+
+.a-arrow{
+  background-image: url(./Image/boton_a1-03.png);
+  background-size: contain;
+  color: transparent;
+  background-repeat: no-repeat;
+  
+}
+
+.triangle-container {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 50px 50px 0;
+  border-color: transparent #007bff transparent transparent;
+  border-radius: 0 50px 50px 0;
+}
+
+
+
+
+
+
+
+
+.section-themes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2em;
+  column-gap: 1em;
+  justify-content: center;
+  padding: 2em;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  background-color: #eff0f5;
+ 
+}
+
+.div1, .div2, .div3, .div4, .div5, .div6 {
+  
+  width: 160px;
+  height: 110px;
+  background-color: #fff;
+  border-radius: 16px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 8px;
+  background-image: url(./Image/imagenes-12.png);
+  background-size:cover;
+  background-size: 105%;
+  background-position-y: -5px;
+  background-repeat: no-repeat;
+
+}
+
+
+.div1 img,.div2 img,.div3 img, .div4 img,.div5 img,.div6 img{
+  width: 90px;
+  height: 74px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -24px;
+}
+
+
+
+/* secction contact me */
+
+.secction-contact{
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  background-color: #eff0f5;
+
+}
+
+.div-content-contact-spans{
+  margin-left: auto;
+  margin-right: auto;
+ 
+ 
+  width: 80%;
+  height: 100px;
+  
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  background-image: url(./Image/Ayuda\ con\ tu\ \(1\).png);
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.formularios{
+  width: 100%;
+  height: 30em;
+  display: flex;
+  flex-direction: column;
+  background-color: #eff0f5;
+  
+}
+
+.form{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+}
+
+.form button{
+  width: 28%;
+  height: 34px;
+  border-radius: 10px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  background: linear-gradient(90deg, rgba(64,99,255,1) 7%, rgba(0,92,254,1) 90%);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+
+
+}
+
+.div-primer-form{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+  height: 17.6em;
+  border-radius: 16px;
+  margin-top: 10px;
+  padding: 1em;
+  background-image: url(./Image/imagenes-03.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 140%;
+  z-index: 1;
+ 
+}
+
+
+
+.div-segundo-form{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  height: 12em;
+  border-radius: 16px;
+  margin-top: 10px;
+  padding: 1em;
+  padding-top: 3em;
+  background-image: url(./Image/imagenes-09.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 1px;
+  margin-top: -50px;
+ 
+}
+
+
+.contact-form-span{
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  text-align: left;
+  margin-left: 10px;
+  color: #eff0f5;
+  margin-bottom: 6em;
+}
+
+.div-primer-form label, .div-segundo-form label{
+  font-size: small;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: left;
+  margin-bottom: 0.5em;
+
+
+}
+
+.div-primer-form input, .div-segundo-form input{
+  width: 80%;
+  height: 1.8em;
+  color: white;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 6px;
+  border: none;
+  background-color: rgba(14, 13, 13, 0.507);
+  display: flex;
+  text-align: center;
+}
+.div-segundo-form{
+  background-color: white;
+}
+
+.div-segundo-form label{
+margin-bottom: 0.5em;
+color: black;
+}
+
+.div-segundo-form input{
+  color: black;
+  background-color: #e5e5e5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

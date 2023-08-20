@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <main class="main" id="app">
+      <!-- nav bar -->
+      <nav class="Nav">
+        <!-- primer contenedor del nav -->
+
+        <div class="div1-nav">
+          <img
+            class="imagen-nav-logo"
+            src="data:image/png;base64,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"
+            alt="logo-Richard"
+          />
+          <div class="Logo">
+            <span>RICHARD</span>
+            <span>DANGOUND</span>
+          </div>
+        </div>
+
+        <!-- segundo contenedor del nav -->
+        <div class="div2-nav">
+          <div class="image-meet"></div>
+          <div class="meet">
+            <span>Solicitar</span>
+            <span
+              style="font-size: 6px; color: rgb(122, 118, 118)"
+              class="reunion-virtual"
+              >Reunion Virtual</span
+            >
+          </div>
+        </div>
+
+        <div class="div3-nav">
+          <div class="menu"></div>
+        </div>
+      </nav>
+      <section>
+        <div>
+          <img
+            class="image-abstracta"
+            src="./Image/imagenes-37.png"
+            alt="decoration"
+          />
+        </div>
+        <div>
+          <div class="content-h1-title">
+            <h1 class="h1-title">
+              DISEÑO AL PROXIMO <br />
+              <span>NIVEL VISUAL</span>
+            </h1>
+          </div>
+          <div class="div-span-leer-mas">
+            <img class="gafas" src="./Image/imagenes-21.png" alt="gafas" />
+            <span class="leer-mas">Leer mas</span>
+          </div>
+
+          <div class="arrow"><a class="a-arrow" href="#section-theme">hola</a></div>
+
+          <div class="triangle-container">
+            <div class="triangle"></div>
+          </div>
+
+          <!-- seccion de los iconos de redes sociales -->
+          <div class="seccion-of-icons-social-media">
+            <div class="social-media-icon" id="icons1"></div>
+            <div class="social-media-icon" id="icons2"></div>
+            <div class="social-media-icon" id="icons3"></div>
+            <div class="social-media-icon" id="icons4"></div>
+            <div class="social-media-icon" id="icons5"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-theme" class="section-themes">
+        <div class="div1">
+          <img src="./Image/consultoria.png" alt="rocket" />
+          <div>
+            <h1>Marketing</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Delectus, pariatur?
+            </p>
+          </div>
+        </div>
+        <div class="div2">
+          <img src="./Image/facebook.png" alt="rocket" />
+          <div>
+            <h1>Marketing</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Delectus, pariatur?
+            </p>
+          </div>
+        </div>
+        <div class="div3">
+          <img src="./Image/google.png" alt="rocket" />
+          <div>
+            <h1>Marketing</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Delectus, pariatur?
+            </p>
+          </div>
+        </div>
+        <div class="div4">
+          <img src="./Image/instagram.png" alt="rocket" />
+          <div>
+            <h1>Marketing</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Delectus, pariatur?
+            </p>
+          </div>
+        </div>
+        <div class="div5">
+          <img src="./Image/linkedin.png" alt="rocket" />
+          <div>
+            <h1>Marketing</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Delectus, pariatur?
+            </p>
+          </div>
+        </div>
+        <div class="div6">
+          <img src="./Image/tiktok.png" alt="rocket" />
+          <div>
+            <h1>Marketing</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Delectus, pariatur?
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="secction-contact">
+        <div class="div-content-contact-spans">
+        </div>
+        <div class="formularios">
+          <form class="form" action="submit">
+            <div class="div-primer-form">
+              <span class="contact-form-span">Contactame</span>
+              <label style="color: white;" for="">
+                Mi nombre es:
+              </label>
+                <input type="text" placeholder="Tu Nombre">
+                <label style="color: white;" for="">
+                  Mi E-Mail:
+                </label>
+              <input type="text" placeholder="Tu E-Mail">
+            </div>
+            <div class="div-segundo-form">
+              <label class="label"  for="">
+                Asunto:
+              </label>
+                <input type="text" placeholder="Tu Nombre">
+                <label class="label" for="">
+                  Proyecto:
+                </label>
+              <input type="text" placeholder="Tu E-Mail">
+            </div>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="./Components/Nav.js"></script>
+    <script>
+      // Esperar a que el documento esté listo
+      document.addEventListener("DOMContentLoaded", function () {
+        // Manejar el clic en el enlace
+        document
+          .querySelector(".arrow")
+          .addEventListener("click", function (event) {
+            event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+
+            // Obtener la posición de la sección deseada
+            var section = document.querySelector("#section-theme");
+            var sectionTop =
+              section.getBoundingClientRect().top + window.scrollY;
+
+            // Ajustar la posición para desplazarse un poco más arriba
+            var offset = 100; // Puedes ajustar este valor según tus necesidades
+
+            // Realizar el desplazamiento suave
+            window.scrollTo({
+              top: sectionTop - offset,
+              behavior: "smooth",
+            });
+          });
+      });
+    </script>
+  </body>
+</html>
