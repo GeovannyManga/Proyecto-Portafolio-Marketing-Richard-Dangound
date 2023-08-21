@@ -397,6 +397,7 @@ padding-right: 10%;
 
 
 .div-segundo-form{
+  background-color: #eff0f5;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -460,6 +461,78 @@ color: black;
 .div-segundo-form input{
   color: black;
   background-color: #e5e5e5;
+}
+
+
+.div-segundo-form .proyecto-input{
+ height: 140px;
+}
+
+/* section of resumen */
+
+.section-resumen{
+  width: 100%;
+  height: 20%;
+  padding-top: 4em;
+  background-color: #eff0f5;
+  
+}
+
+
+.title-resumen{
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #eff0f5;
+}
+
+.content-grid-resumen{
+  background-color: #eff0f5;
+  width: 100%;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1em;
+  padding: 1.4em;
+}
+
+.grid1{
+  background-color: black;
+  grid-column: 1/span 2;
+  grid-row: 1/span 3;
+  border-radius: 12px;
+  height: 100%;
+  background-image: url(./Image/imagenes-02.png);
+  background-repeat: no-repeat;
+  background-size: 110%;
+  background-position: center;
+}
+.grid2{
+  background-color: white;
+  grid-row: 2/3;
+  grid-column: 3/4;
+  border-radius: 12px;
+  background-image: url(./Image/imagenes-05.png);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  
+}
+
+.grid3{
+  background-color: green;
+  background-image: url(./Image/imagenes-06.png);
+  background-size: 120%;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-column: 1/span 3;
+  grid-row: 4;
+  border-radius: 12px;
+  height: 160px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
