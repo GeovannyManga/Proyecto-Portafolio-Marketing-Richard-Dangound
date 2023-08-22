@@ -434,7 +434,10 @@ padding-right: 10%;
 }
 .div-segundo-form{
   background-color: white;
+  margin-top: -1.5em;
 }
+
+
 
 .div-segundo-form label{
 margin-bottom: 0.5em;
@@ -576,21 +579,175 @@ color: black;
   
 }
 
+.section-blog{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--color-Background);
+  width: 100%;
+  height: auto;
+  margin-top: 24em;
+  padding-top: 2em;
+}
+
+
+.content-img{
+  display: flex;
+  justify-items: center;
+  width: 90%;
+  height: auto;
+  margin-top: 2em;
+
+}
+
+.img-blog{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 22em;
+  margin-left: 1em;
+ 
+}
+
+
+.div-title-blog{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 28px;
+ 
+
+}
+
+.p-blog{
+  margin-top: 1em;
+  width: 90%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.h1-blog{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.h2-blog{
+ text-align: right;
+ font-family: 'Montserrat', sans-serif;
+}
 
 
 
 
 
+.section-comentarios{
+  width: 100%;
+  height: 200px;
+  background-color: var(--color-Background);
+}
 
 
 
+.oponion-div{
+  width: 100%;
+  height: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2em;
+}
+
+.oponion-div img{
+  width: 50px;
+  height: 50px;
+}
+
+.div-inter-opinion{
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  height: 100%;
+  align-content: center;
+}
+
+.div-inter-opinion span{
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin-bottom: 0.4em;
+}
+
+.div-inter-opinion p{
+  font-size:medium;
+
+  
+}
 
 
 
+.coment-div{
+  width: 100%;
+  height: auto;
+  background-color: var(--color-Background);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0.5em;
+}
 
 
+.one, .two, .three,.four{
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 88%;
+  height: 10em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--color-white);
+}
 
 
+ .new-coment{
+  border-radius: 12px;
+  padding: 0.1em;
+  padding-right: 0.5em;
+  margin-top: 1.5em;
+  margin-left: 1em;
+  z-index: 1;
+}
+
+.new-coment p{
+  margin-top: 1em;
+  font-size: 12px;
+}
+
+.new-coment span{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.start{
+  width: 100%;
+  height: 1.4em;
+  margin-right: 1em;
+  display: flex;
+  justify-content: right;
+  margin-top: 1em;
+  
+ 
+}
+
+ .start img{
+  width: 20px;
+  height: 20px;
+  margin: auto;
+
+  
+}
 
 
 
