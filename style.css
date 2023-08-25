@@ -22,7 +22,7 @@ font-family: 'Rubik', sans-serif;
 
 #app{
   background-color: var(--color-Background);
-  height: 100em;
+  height: auto;
 }
 
 
@@ -585,7 +585,7 @@ color: black;
   background-color: var(--color-Background);
   width: 100%;
   height: auto;
-  margin-top: 24em;
+  margin-top: 2em;
   padding-top: 2em;
 }
 
@@ -646,7 +646,7 @@ color: black;
 
 .section-comentarios{
   width: 100%;
-  height: 200px;
+  height: 600px;
   background-color: var(--color-Background);
 }
 
@@ -718,7 +718,8 @@ color: black;
   padding-right: 0.5em;
   margin-top: 1.5em;
   margin-left: 1em;
-  z-index: 1;
+
+
 }
 
 .new-coment p{
@@ -752,7 +753,89 @@ color: black;
 
 
 
+.footer-main{
+  margin-top: 16em;
+  width: 100%;
+  height: 100px;
+  background-color:var(--color-Background);
 
+  
+  
+}
+
+
+.content-footer{
+  bottom: 0px;
+  width: 100%;
+  height: 100px;
+  background-color: var(--color-white);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+
+  
+}
+
+.content-footer img{
+ width: 30px;
+ height: 30px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+
+.content-footer ul div{
+ display:inline-flex;
+ 
+ flex-direction: row;
+ 
+}
+
+.content-footer li{
+  list-style: none;
+  
+}
+
+
+.content-footer .img{
+  width: 16px;
+  height: 16px;
+  visibility: hidden;
+ 
+}
+
+.content-footer-logo {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; /* Añadido para centrar verticalmente */
+}
+
+.content-footer-logo div, .content-footer-logo img {
+  width: 100px;
+  height: 32px;
+  margin: 0; /* Asegúrate de que no haya márgenes */
+  padding: 0; /* Asegúrate de que no haya relleno */
+  display: flex;
+  align-items: center;
+
+}
+
+
+.content-footer-logo a {
+  text-decoration: none;
+
+}
+
+.content-footer-logo div {
+  background: var(--color-blue-gradient);
+  border-radius: 10px;
+
+}
 
 
 

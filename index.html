@@ -206,75 +206,139 @@
           <div class="div-inter-opinion">
             <span>Opiniones</span>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et fugit.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+              fugit.
             </p>
           </div>
-          <img src="./Image/imagenes-23.png" alt="tweter">
-          <img src="./Image/imagenes-24.png" alt="linkedin">
+          <img src="./Image/imagenes-23.png" alt="tweter" />
+          <img src="./Image/imagenes-24.png" alt="linkedin" />
         </div>
         <div class="coment-div">
           <div class="one">
             <div class="new-coment">
               <span>Juan Roberto Anderson</span>
-              <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, optio.</P>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Deserunt, optio.
+              </p>
             </div>
             <div class="start">
-              <img src="./Image/estrella.png" alt="estrella">
-              <img src="./Image/estrella.png" alt="estrella">
-              <img src="./Image/estrella.png" alt="estrella">
-              <img src="./Image/estrella.png" alt="estrella">
-              <img src="./Image/estrella.png" alt="estrella">
+              <img src="./Image/estrella.png" alt="estrella" />
+              <img src="./Image/estrella.png" alt="estrella" />
+              <img src="./Image/estrella.png" alt="estrella" />
+              <img src="./Image/estrella.png" alt="estrella" />
+              <img src="./Image/estrella.png" alt="estrella" />
             </div>
           </div>
           <div class="two">
             <div class="new-coment">
               <span>Esteban Gonzales</span>
-              <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, optio.</P>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Deserunt, optio.
+              </p>
             </div>
             <div class="start">
-              <img src="./Image/estrella.png" alt="estrella">
-              <img src="./Image/estrella.png" alt="estrella">
-              <img src="./Image/estrella.png" alt="estrella">
-              <img src="./Image/estrella.png" alt="estrella">
-              <img src="./Image/estrella.png" alt="estrella">
+              <img src="./Image/estrella.png" alt="estrella" />
+              <img src="./Image/estrella.png" alt="estrella" />
+              <img src="./Image/estrella.png" alt="estrella" />
+              <img src="./Image/estrella.png" alt="estrella" />
+              <img src="./Image/estrella.png" alt="estrella" />
             </div>
           </div>
           <div class="three">
             <div class="new-coment">
               <span>Edward Ramirez</span>
-              <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, optio.</P>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Deserunt, optio.
+              </p>
             </div>
             <div class="start">
-              <img src="./Image/estrella.png" alt="estrella">
-              <img src="./Image/estrella.png" alt="estrella">
-              <img src="./Image/estrella.png" alt="estrella">
-              <img src="./Image/estrella.png" alt="estrella">
-              <img src="./Image/estrella.png" alt="estrella">
+              <img src="./Image/estrella.png" alt="estrella" />
+              <img src="./Image/estrella.png" alt="estrella" />
+              <img src="./Image/estrella.png" alt="estrella" />
+              <img src="./Image/estrella.png" alt="estrella" />
+              <img src="./Image/estrella.png" alt="estrella" />
             </div>
           </div>
           <div class="four">
             <div class="new-coment">
               <span>Juan Esteban</span>
-              <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, optio.</P>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Deserunt, optio.
+              </p>
             </div>
             <div class="start">
-              <img src="./Image/estrella.png" alt="estrella">
-              <img src="./Image/estrella.png" alt="estrella">
-              <img src="./Image/estrella.png" alt="estrella">
-              <img src="./Image/estrella.png" alt="estrella">
-              <img src="./Image/estrella.png" alt="estrella">
+              <img src="./Image/estrella.png" alt="estrella" />
+              <img src="./Image/estrella.png" alt="estrella" />
+              <img src="./Image/estrella.png" alt="estrella" />
+              <img src="./Image/estrella.png" alt="estrella" />
+              <img src="./Image/estrella.png" alt="estrella" />
             </div>
           </div>
         </div>
       </section>
-      <footer>
-        <div>
+      <footer class="footer-main">
+        <div class="content-footer">
           <!-- pendiente -->
+          <img  src="./Image/lupa.png" alt="lupa" />
+          <ul class="content-options">
+            <div onclick="cambiarVisibilidad(this)">
+              <img  class="img" src="./Image/tarea.png" alt="" />
+              <li>Diseño</li>
+            </div>
+            <div onclick="cambiarVisibilidad(this)">
+              <img class="img" src="./Image/tarea.png" alt="" />
+              <li>Diseño</li>
+            </div>
+            <div onclick="cambiarVisibilidad(this)">
+              <img class="img" src="./Image/tarea.png" alt="" />
+              <li>Diseño</li>
+            </div>
+            <div onclick="cambiarVisibilidad(this)">
+              <img class="img" src="./Image/tarea.png" alt="" />
+              <li>Diseño</li>
+            </div>
+          </ul>
+          <div class="content-footer-logo">
+            <img src="./Image/ORIGINAL (1).png" alt="logo">
+            <a href="#"><div>Contáctame</div></a>
+          </div>          
         </div>
       </footer>
     </main>
     <script type="module" src="./Components/Nav.js"></script>
     <script>
+      function cambiarVisibilidad(elemento) {
+        // Obtener todos los elementos <li>
+        const lis = document.querySelectorAll("li");
+
+        // Cambiar el color de todos los elementos <li> a negro
+        lis.forEach((li) => {
+          li.style.color = "black";
+        });
+
+        // Ocultar todas las imágenes en los elementos
+        const divs = document.querySelectorAll(".img");
+        divs.forEach((d) => {
+          d.style.visibility = "hidden";
+        });
+
+        // Mostrar la imagen del elemento seleccionado
+        const imgElement = elemento.querySelector(".img");
+        if (imgElement) {
+          imgElement.style.visibility = "visible";
+
+          // Cambiar el color del elemento <li> adyacente a la imagen a azul
+          const liElement = imgElement.nextElementSibling;
+          if (liElement && liElement.tagName === "LI") {
+            liElement.style.color = "#4063FF";
+          }
+        }
+      }
+
       // Esperar a que el documento esté listo
       document.addEventListener("DOMContentLoaded", function () {
         // Manejar el clic en el enlace
