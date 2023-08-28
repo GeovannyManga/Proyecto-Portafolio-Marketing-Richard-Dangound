@@ -287,19 +287,23 @@
           <ul class="content-options">
             <div onclick="cambiarVisibilidad(this)">
               <img  class="img" src="./Image/tarea.png" alt="" />
-              <li>INICIO</li>
+              <a>
+                <li class="lis" >INICIO</li>
+              </a>
             </div>
             <div onclick="cambiarVisibilidad(this)">
               <img class="img" src="./Image/tarea.png" alt="" />
-              <li>SERVICIO</li>
+              <a href="./Components/servicios.html">
+                <li class="lis">SERVICIO</li>
+              </a>
             </div>
             <div onclick="cambiarVisibilidad(this)">
               <img class="img" src="./Image/tarea.png" alt="" />
-              <li>BLOG</li>
+              <li class="lis">BLOG</li>
             </div>
             <div onclick="cambiarVisibilidad(this)">
               <img class="img" src="./Image/tarea.png" alt="" />
-              <li>SOBRE MI</li>
+              <li class="lis">SOBRE MI</li>
             </div>
           </ul>
           <div class="content-footer-logo">
@@ -309,9 +313,50 @@
         </div>
       </footer>
     </main>
-    <script type="module" src="./Components/Nav.js"></script>
     <script>
+
+
+
+
+      
+
+
+
+
+document.addEventListener('click', function(event) {
+    var lisElements = document.getElementsByClassName('lis');
+    var isClickedOnLis = false;
+
+    for (var i = 0; i < lisElements.length; i++) {
+        if (lisElements[i].contains(event.target)) {
+            isClickedOnLis = true;
+            break;
+        }
+    }
+
+    if (!isClickedOnLis) {
+        let imgElements = document.getElementsByClassName("img");
+        let lisElements = document.getElementsByClassName("lis");
+        let newImgElements = [...imgElements];
+
+        newImgElements.forEach(element => {
+            if (element.style.visibility === "visible") {
+                element.style.visibility = "hidden";
+
+                for (let i = 0; i < lisElements.length; i++) {
+                    lisElements[i].style.color = "black";
+                }
+            }
+        });
+    }
+});
+
+
+
+
+
       function cambiarVisibilidad(elemento) {
+        
         // Obtener todos los elementos <li>
         const lis = document.querySelectorAll("li");
 

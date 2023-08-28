@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Rubik:wght@400;500;700&display=swap');
+
+:root {
+  --color-Background: #eff0f5; /* Azul */
+  --color-white: white; /* Rojo */
+    --color-black-leve: #10100F; /* Naranja */
+    --color-text: #333; /* Texto principal */
+    --color-background-blue:#4063FF;
+    --color-blue-gradient: linear-gradient(90deg, rgba(64,99,255,1) 7%, rgba(0,92,254,1) 90%); /* Fondo */
+  }
+  
+
+
+.Nav {
+    margin-top: 22px;
+    width: 90%;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.032);
+    backdrop-filter: blur(40px); 
+    border-radius: 12px;
+    left: 50%; /* Desplazamos el elemento a la mitad del ancho del viewport */
+    transform: translateX(-50%); /* Lo movemos hacia la izquierda en la mitad de su propio ancho */
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+  
+}
+
+.div1-nav{
+  border-radius: 8px;
+  width: 70px;
+  height: 50%;
+  display: flex;
+  background-color: var(--color-white);
+  font-size: 8px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 5px;
+  overflow: hidden;
+}
+
+.imagen-nav-logo{
+  width: 22px;
+  height: 20px;
+}
+
+
+.div2-nav{
+  border-radius: 8px;
+  color: var(--color-white);
+  width: 100px;
+  height: 50%;
+  display: flex;
+  background-color: #10100F;
+  font-size: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 1.5px;
+
+  
+}
+
+.image-meet {
+  width: 44px;
+  height: 40px;
+  background-image: url(../../Image/zoom-meeting-logo-transparent-png-21\ -\ copia.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  margin-top: -3px;
+
+}
+
+
+.reunion-virtual{
+  font-size: 8px;
+}
+
+.meet{
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.menu{
+  width: 50px;
+  height: 50px;
+  background-image: url(../../Image/menu.png);
+  background-size: cover;
+  background-color:var(--color-white);
+  border-radius: 10px;
+}
+
+.section-service {
+    width: 100%;
+    height: 80vh;
+    background-color: #10100F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-blog {
+    width: 100%;
+    height: 40vh;
+    background-color: #4063FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-title {
+    width: 100px;
+    height: 100px;
+}
+
+.text-title {
+    font-size: 2rem;
+    width: 200px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
