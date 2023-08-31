@@ -26,7 +26,7 @@
         </div>
 
         <!-- segundo contenedor del nav -->
-        <div class="div2-nav">
+        <a href="https://calendly.com/geovannyx-casimirom/sesion-de-consultoria-marketing" class="div2-nav">
           <div class="image-meet"></div>
           <div class="meet">
             <span>Solicitar</span>
@@ -36,21 +36,21 @@
               >Reunion Virtual</span
             >
           </div>
-        </div>
+        </a>
 
         <div class="div3-nav">
           <div class="menu"></div>
         </div>
       </nav>
-      <section>
-        <div>
+      <section class="home">
+        <div class="img-content-home">
           <img
             class="image-abstracta"
             src="./Image/imagenes-37.png"
             alt="decoration"
           />
         </div>
-        <div>
+        <div class="content-text">
           <div class="content-h1-title">
             <h1 class="h1-title">
               DISEÑO AL PROXIMO <br />
@@ -78,16 +78,6 @@
       </section>
 
       <section id="section-theme" class="section-themes">
-        <div class="div1">
-          <img src="./Image/consultoria.png" alt="rocket" />
-          <div>
-            <h1>Marketing</h1>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Delectus, pariatur?
-            </p>
-          </div>
-        </div>
         <div class="div2">
           <img src="./Image/facebook.png" alt="rocket" />
           <div>
@@ -159,8 +149,8 @@
                 type="text"
                 placeholder="Informacion del proyecto"
               />
+              <button type="submit">Enviar</button>
             </div>
-            <button type="submit">Enviar</button>
           </form>
         </div>
       </section>
@@ -285,23 +275,25 @@
           <!-- pendiente -->
           <img  src="./Image/lupa.png" alt="lupa" />
           <ul class="content-options">
-            <div onclick="cambiarVisibilidad(this)">
+            <div >
               <img  class="img" src="./Image/tarea.png" alt="" />
-              <a>
+              <a href="./index.html">
                 <li class="lis" >INICIO</li>
               </a>
             </div>
-            <div onclick="cambiarVisibilidad(this)">
+            <div >
               <img class="img" src="./Image/tarea.png" alt="" />
-              <a href="./Components/servicios.html">
+              <a href="./Components/googleAds.html">
                 <li class="lis">SERVICIO</li>
               </a>
             </div>
-            <div onclick="cambiarVisibilidad(this)">
+            <div>
               <img class="img" src="./Image/tarea.png" alt="" />
-              <li class="lis">BLOG</li>
+              <a href="./Components/Blog.html">
+                <li class="lis">BLOG</li>
+              </a>
             </div>
-            <div onclick="cambiarVisibilidad(this)">
+            <div >
               <img class="img" src="./Image/tarea.png" alt="" />
               <li class="lis">SOBRE MI</li>
             </div>
@@ -315,74 +307,6 @@
     </main>
     <script>
 
-
-
-
-      
-
-
-
-
-document.addEventListener('click', function(event) {
-    var lisElements = document.getElementsByClassName('lis');
-    var isClickedOnLis = false;
-
-    for (var i = 0; i < lisElements.length; i++) {
-        if (lisElements[i].contains(event.target)) {
-            isClickedOnLis = true;
-            break;
-        }
-    }
-
-    if (!isClickedOnLis) {
-        let imgElements = document.getElementsByClassName("img");
-        let lisElements = document.getElementsByClassName("lis");
-        let newImgElements = [...imgElements];
-
-        newImgElements.forEach(element => {
-            if (element.style.visibility === "visible") {
-                element.style.visibility = "hidden";
-
-                for (let i = 0; i < lisElements.length; i++) {
-                    lisElements[i].style.color = "black";
-                }
-            }
-        });
-    }
-});
-
-
-
-
-
-      function cambiarVisibilidad(elemento) {
-        
-        // Obtener todos los elementos <li>
-        const lis = document.querySelectorAll("li");
-
-        // Cambiar el color de todos los elementos <li> a negro
-        lis.forEach((li) => {
-          li.style.color = "black";
-        });
-
-        // Ocultar todas las imágenes en los elementos
-        const divs = document.querySelectorAll(".img");
-        divs.forEach((d) => {
-          d.style.visibility = "hidden";
-        });
-
-        // Mostrar la imagen del elemento seleccionado
-        const imgElement = elemento.querySelector(".img");
-        if (imgElement) {
-          imgElement.style.visibility = "visible";
-
-          // Cambiar el color del elemento <li> adyacente a la imagen a azul
-          const liElement = imgElement.nextElementSibling;
-          if (liElement && liElement.tagName === "LI") {
-            liElement.style.color = "#4063FF";
-          }
-        }
-      }
 
       // Esperar a que el documento esté listo
       document.addEventListener("DOMContentLoaded", function () {

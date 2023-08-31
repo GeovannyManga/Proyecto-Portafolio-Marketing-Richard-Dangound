@@ -13,6 +13,12 @@
   body{
     background-color: var(--color-Background);
   }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   
 
 
@@ -175,7 +181,7 @@
 
 
 .img-services{
-  margin-top: 10em;
+  margin-top: 6em;
   width: 70%;
   height: 18em;
   margin-left: auto;
@@ -195,6 +201,7 @@
   overflow-x: auto;
   padding: 2em;
   gap: 1em;
+  width: auto;
 }
 
 .div-container {
@@ -211,13 +218,19 @@
 .div-container img {
   width: 90px;
   height: 74px;
-  margin-top: -26px;
+  margin-top: -28px;
+  margin-bottom: 18px;
 }
 
 .div-container > div {
   padding: 10px;
   font-size: 10px;
   margin-top: -36px;
+}
+
+.carousel-container{
+  overflow: scroll;
+  position: relative;
 }
 
 .carousel-container::-webkit-scrollbar {
