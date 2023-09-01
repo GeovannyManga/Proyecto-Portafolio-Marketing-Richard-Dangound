@@ -1,5 +1,8 @@
-let carrucelContent = document.getElementsByClassName("carousel-container")[0];
+let carrucelContent = document.getElementsByClassName("contenedor")[0];
 let blogData; // Variable para almacenar los datos de los blogs
+
+
+
 
 // Realizar la petición a la API
 fetch('../blog.json')
@@ -65,4 +68,5 @@ function handleElementClick(id) {
     console.log("Información del blog:", selectedBlog);
     // Aquí puedes mostrar la información en el lugar que necesites en tu página
 }
+
 

@@ -1,0 +1,71 @@
+
+
+
+.tarea{
+    width: 14px;
+    height: 14px;
+    visibility: hidden;
+  }
+
+.icons-redes{
+    width: 60%;
+    height: 10em;
+    display: flex;
+    justify-content: center;
+}
+
+.icons-redes img{
+    width: 30px;
+    height: 30px;
+    margin-left: 1em;
+    margin-right: 1em;
+    
+}
+
+.text{
+    font-size: 16px;
+}
+
+@media (min-width: 1000px) {
+    .div-content-blog-text{
+        margin-top: -8em;
+    }
+
+    
+    .div-content-blog-text div{
+        padding-left: 26em;
+    }
+
+    .icons-redes img{
+        width: 18px;
+        height: 18px;
+    }
+    
+    .text{
+        width: 24em;
+        height:10em;
+    }
+    .blog-title{
+        font-size: 80px;
+        margin-left: 2em;
+    }
+    
+    .blog-subtitle{
+        margin-left: 3.2em;
+        font-size: 50px;
+        margin-bottom: 0.5em;
+    }
+    
+    .img-services{
+        margin-top: -1em;
+        height: 28em;
+    }
+
+    .text{
+        margin-left: 18em;
+        width: 24em;
+    }
+    element.style {
+        font-size: 9px;
+      }
+}

@@ -22,7 +22,55 @@
   
 
 
-.Nav {
+  .tarea{
+    width: 14px;
+    height: 14px;
+    visibility: hidden;
+  }
+
+
+  
+a{
+  color: black;
+  text-decoration: none;
+}
+.lateralBar li {
+  writing-mode: vertical-rl; /* Cambia la dirección del texto verticalmente */
+  transform: rotate(180deg); /* Gira el texto para que la parte inferior apunte hacia la derecha */
+  text-align: left; /* parte superior de las letras mirando hacia la derecha */
+  list-style: none;
+  padding: 1em;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+
+
+
+.lateralBar{
+  display: none;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 5em;
+ 
+  z-index: 100;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  background-color: transparent;
+}
+
+.lateralBar li:hover{
+  color: var(--color-background-blue);
+  cursor: pointer;
+}
+
+
+
+  .Nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 22px;
     width: 90%;
     height: 70px;
@@ -33,7 +81,7 @@
     transform: translateX(-50%); /* Lo movemos hacia la izquierda en la mitad de su propio ancho */
     overflow: hidden;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     position: fixed;
     z-index: 2;
@@ -42,16 +90,25 @@
 
 .div1-nav{
   border-radius: 8px;
-  width: 70px;
-  height: 50%;
+  width: 24%;
+  height: 60%;
   display: flex;
-  background-color: var(--color-white);
+  background-image: url(./Image/ORIGINAL\ \(1\)\ \(1\).png);
+  background-size: cover;
+  background-repeat: no-repeat;
   font-size: 8px;
   margin-top: auto;
   margin-bottom: auto;
   padding-top: 5px;
   overflow: hidden;
 }
+
+.div1-nav:hover{
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+
 
 .imagen-nav-logo{
   width: 22px;
@@ -62,21 +119,24 @@
 .div2-nav{
   border-radius: 8px;
   color: var(--color-white);
-  width: 100px;
-  height: 50%;
+  width: 31%;
+  height: 60%;
   display: flex;
   background-color: #10100F;
   font-size: 10px;
   margin-top: auto;
   margin-bottom: auto;
   padding-top: 1.5px;
-
+  
   
 }
 
+.div2-nav:hover{
+  opacity: 0.8;
+}
 .image-meet {
   width: 44px;
-  height: 40px;
+  height: 46px;
   background-image: url(../../Image/zoom-meeting-logo-transparent-png-21\ -\ copia.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -101,11 +161,17 @@
 .menu{
   width: 50px;
   height: 50px;
+  background-color: white;
   background-image: url(../../Image/menu.png);
   background-size: cover;
   background-color:var(--color-white);
   border-radius: 10px;
 }
+
+.boton-contact{
+  display: none;
+}
+
 
 .section-service {
     width: 100%;
@@ -125,6 +191,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Montserrat';
 }
 
 .img-title {
@@ -138,7 +205,7 @@
 .text-title {
     font-size: 2rem;
     width: 200px;
-    height: 100px;
+    height: 118px;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -213,6 +280,11 @@
   position: relative;
   text-decoration: none;
   color: black;
+  margin-left: 1em;
+}
+
+.div-container:hover{
+  cursor: pointer;
 }
 
 .div-container img {
@@ -285,6 +357,7 @@
 .content-footer ul div{
  display:inline-flex;
  flex-direction: row;
+ justify-content: center;
 
 
  
@@ -356,11 +429,15 @@ a{
 
 
 .content-options{
+  
   width: 90%;
   padding: 0;
   margin-left: 5px;
   height: auto;
   justify-content: center;
+  text-align: center;
+ 
+
 }
 
 
@@ -372,3 +449,179 @@ a{
 
 
 
+/* los media quieries  */
+
+@media (max-width: 640px) and (min-width: 540px) {
+  .form button {
+    margin-left: 6.4em;
+  }
+
+  .div1-nav{
+    width: 20%;
+  }
+
+  .div2-nav{
+    width: 24%;
+  }
+
+
+}
+
+
+@media (min-width: 750px) {
+  .content-options{
+    width: 99%;
+  }
+
+  
+  .Nav{
+    height: 88px;
+    
+  }
+
+
+  .div1-nav{
+    height: 66%;
+    width: 18%;
+  }
+  
+  .div2-nav{
+    width: 18%;
+    height: 68%;
+  }
+
+  .image-meet {
+    margin-top: 0.5%;
+    width: 54%;
+    height: 100%;
+    
+  }
+  .menu{
+    display: none;
+  }
+
+  .boton-contact{
+    display: block;
+  }
+  .boton-contact div{
+    background-color: var(--color-background-blue);
+  }
+  
+  
+
+.boton-contact div{
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+  height: 46px;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  justify-content: center;
+  border-radius: 10px;
+  color: var(--color-white);
+}
+
+.boton-contact div:hover{
+cursor: pointer;
+background-color: #4063ffa9;
+}
+
+
+
+.div-content-blog-text{
+  width: 74%;
+}
+
+.title-blog {
+  margin-bottom: 2em;
+}
+
+.img-services {
+  margin-top: 4em;
+  width: 47%;
+  height: 25em;
+}
+
+.carousel-container{
+  overflow: auto;
+  width: 100%;
+  justify-content: center;
+}
+
+.text{
+  font-size: 20px;
+}
+
+}
+
+
+
+@media (min-width: 1000px) {
+
+
+
+  .lateralBar{
+    display: flex;
+  }
+
+  .div1-nav{
+    width: 12%;
+  }
+
+  .div2-nav{
+    width: 14%;
+   
+  }
+
+  .menu{
+    display: none;
+  }
+
+  .section-service{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .div-content-blog-text{
+    width: 100%;
+  }
+  
+  .img-services {
+    margin-top: 4em;
+    width: 78%;
+    height: 25em;
+  }
+
+  .div2-nav span{
+    font-size: 16px;
+  }
+  
+}
+
+
+@media (min-width: 1280px) {
+  .img-services{
+    margin-top: -4em;
+  }
+
+  .meet{
+    width: 80%;
+  }
+  .img-services{
+    margin-top: 2em;
+    width: 60%;
+  }
+
+  .text-title{
+    font-size: 3rem;
+    width: 300px;
+  }
+
+  .text{
+    font-size: 20px;
+  }
+
+  .section-service {
+    padding-top: 4em;
+  }
+}
