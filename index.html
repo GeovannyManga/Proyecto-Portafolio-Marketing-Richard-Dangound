@@ -38,7 +38,29 @@
           <div class="menu"></div>
           <a class="boton-contact"><div id="cont" >Contactame</div></a>
         </div>
+        
       </nav>
+      <div class="hamburguerBar">
+        <ul>
+          <a  href="./Components/about.html" class="menu-link">
+            <img class="tarea" src="./Image/tarea.png" alt="">
+            <li>SOBRE MI</li>
+          </a>
+          <a href="./Components/Blog.html" class="menu-link">
+            <img class="tarea" src="./Image/tarea.png" alt="">
+            <li>BLOG</li>
+          </a>
+          <a href="./Components/googleAds.html" class="menu-link">
+            <img class="tarea" src="./Image/tarea.png" alt="">
+            <li>SERVICIOS</li>
+          </a>
+          <a href="./index.html" class="menu-link">
+            <img class="tarea" src="./Image/tarea.png" alt="">
+            <li>INICIO</li>
+          </a>
+        </ul>
+        <button>Contactame</button>
+      </div>
       <section class="home">
         <div class="img-content-home">
           <img
@@ -89,17 +111,17 @@
 
           <!-- seccion de los iconos de redes sociales -->
           <div class="seccion-of-icons-social-media">
-            <div class="social-media-icon" id="icons1"></div>
-            <div class="social-media-icon" id="icons2"></div>
-            <div class="social-media-icon" id="icons3"></div>
-            <div class="social-media-icon" id="icons4"></div>
-            <div class="social-media-icon" id="icons5"></div>
+            <a href="https://api.whatsapp.com/send?phone=3023489662" class="social-media-icon" id="icons1"></a>
+            <a class="social-media-icon" id="icons2"></a>
+            <a class="social-media-icon" id="icons3"></a>
+            <a class="social-media-icon" id="icons4"></a>
+            <a class="social-media-icon" id="icons5"></a>
           </div>
         </div>
       </section>
 
       <section id="section-theme" class="section-themes">
-        <div class="div2">
+        <a href="./Components/facebookAds.html" class="div2">
           <img src="./Image/facebook.png" alt="rocket" />
           <div>
             <h1>Facebook Ads</h1>
@@ -108,8 +130,8 @@
               anuncios personalizados.
             </p>
           </div>
-        </div>
-        <div class="div3">
+        </a>
+        <a href="./Components/googleAds.html" class="div3">
           <img src="./Image/google.png" alt="rocket" />
           <div>
             <h1>Google Ads</h1>
@@ -118,8 +140,8 @@
               resultados de búsqueda y sitios asociados.
             </p>
           </div>
-        </div>
-        <div class="div4">
+        </a>
+        <a href="./Components/instagramAds.html" class="div4">
           <img src="./Image/instagram.png" alt="rocket" />
           <div>
             <h1>Instagram Ads</h1>
@@ -128,8 +150,8 @@
               global en Instagram.
             </p>
           </div>
-        </div>
-        <div class="div5">
+        </a>
+        <a href="./Components/linkedinAds.html" class="div5">
           <img src="./Image/linkedin.png" alt="rocket" />
           <div>
             <h1>Linkedin Ads</h1>
@@ -138,8 +160,8 @@
               para networking laboral.
             </p>
           </div>
-        </div>
-        <div class="div6">
+        </a>
+        <a href="./Components/tiktokAds.html" class="div6">
           <img src="./Image/tiktok.png" alt="rocket" />
           <div>
             <h1>Tik Tok Ads</h1>
@@ -148,7 +170,7 @@
               breves en TikTok.
             </p>
           </div>
-        </div>
+        </a>
       </section>
       <section class="secction-contact">
         <div id="form" class="div-content-contact-spans"></div>
@@ -423,6 +445,68 @@ menuLinks.forEach((menuLink) => {
 
 
 // Llama a la función para activar el comportamiento
+
+const hamb = document.querySelectorAll('.menu-link');
+
+// Agrega un evento a cada elemento 'a' para el evento 'mouseenter'
+hamb.forEach((hamb) => {
+  const imagenTarea = hamb.querySelector('.tarea');
+  const text = hamb.querySelector('li');
+  hamb.addEventListener('mouseenter', () => {
+    imagenTarea.style.visibility = 'visible';
+    text.style.color = '#4063FF';
+  });
+
+  // Agrega un evento para el evento 'mouseleave'
+  hamb.addEventListener('mouseleave', () => {
+    imagenTarea.style.visibility = 'hidden';
+    text.style.color = 'black';
+  });
+});
+
+
+  
+
+const burguer = document.querySelector(".hamburguerBar");
+const menu = document.querySelector(".menu");
+
+// Función para manejar el clic en el menú
+menu.addEventListener('click', () => {
+    burguer.style.display = "flex";
+    if (menu) {
+        console.log("hola mundo");
+    }
+});
+
+// Función para manejar clics en cualquier parte del documento
+document.addEventListener('click', (event) => {
+    if (event.target !== menu) {
+        burguer.style.display = "none";
+    }
+});
+
+// Función para manejar el evento de cambio de tamaño de la ventana
+function handleResize() {
+    if (window.innerWidth >= 640) {
+        burguer.style.display = "none"; // Ocultar hamburguesa en pantallas anchas
+    }
+    // No ocultar la hamburguesa en pantallas estrechas si ya está visible
+}
+
+// Llama a handleResize inicialmente para configurar el estado inicial
+handleResize();
+
+// Llama a handleResize cuando la ventana cambie de tamaño
+window.addEventListener('resize', handleResize);
+
+
+// Llama a handleResize inicialmente para configurar el estado inicial
+handleResize();
+
+// Llama a handleResize cuando la ventana cambie de tamaño
+window.addEventListener('resize', handleResize);
+
+
 
 
     </script>

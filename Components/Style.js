@@ -31,3 +31,43 @@ divLinks.forEach((divLinks) => {
     text.style.color = 'black';
   });
 });
+
+
+const burguer = document.querySelector(".hamburguerBar");
+const menu = document.querySelector(".menu");
+
+// Función para manejar el clic en el menú
+menu.addEventListener('click', () => {
+    burguer.style.display = "flex";
+    if (menu) {
+        console.log("hola mundo");
+    }
+});
+
+// Función para manejar clics en cualquier parte del documento
+document.addEventListener('click', (event) => {
+    if (event.target !== menu) {
+        burguer.style.display = "none";
+    }
+});
+
+// Función para manejar el evento de cambio de tamaño de la ventana
+function handleResize() {
+    if (window.innerWidth >= 1000) {
+        burguer.style.display = "none"; // Ocultar hamburguesa en pantallas anchas
+    }
+    // No ocultar la hamburguesa en pantallas estrechas si ya está visible
+}
+
+// Llama a handleResize inicialmente para configurar el estado inicial
+handleResize();
+
+// Llama a handleResize cuando la ventana cambie de tamaño
+window.addEventListener('resize', handleResize);
+
+
+// Llama a handleResize inicialmente para configurar el estado inicial
+handleResize();
+
+// Llama a handleResize cuando la ventana cambie de tamaño
+window.addEventListener('resize', handleResize);
