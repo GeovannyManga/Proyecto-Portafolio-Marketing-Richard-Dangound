@@ -61,7 +61,7 @@
           <li>INICIO</li>
         </a>
       </ul>
-      <button>Contactame</button>
+      <button onclick="contact(event)" >Contactame</button>
     </div>
 
     <div class="lateralBar">
@@ -215,6 +215,11 @@
     <script>
       function clickHome() {
         window.location.href = "../../index.html";
+      }
+
+      function contact(event) {
+        event.preventDefault()
+        window.location.href = "../../index.html#form"
       }
     </script>
     <script type="module" src="./Style.js"></script>
