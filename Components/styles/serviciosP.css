@@ -1,0 +1,125 @@
+:root {
+  --color-Background: #eff0f5; /* Azul */
+  --color-white: white; /* Rojo */
+    --color-black-leve: #10100F; /* Naranja */
+    --color-text: #333; /* Texto principal */
+    --color-background-blue:#4063FF;
+    --color-blue-gradient: linear-gradient(90deg, rgba(64,99,255,1) 7%, rgba(0,92,254,1) 90%); /* Fondo */
+  }
+
+body{
+    height: auto;
+}
+
+.reunion-virtual{
+  font-size: 8px;
+}
+
+
+.footer-main {
+    position: relative;
+    bottom: 0;
+}
+
+.botons{
+  background-color: var(--color-background-blue);
+  width: 80%;
+  height: 2em;
+  position: absolute;
+  bottom: -10px;
+  left: 10%;
+  right: auto;
+  border: none;
+  border-radius: 12px;
+  color: var(--color-white);
+  z-index: 100;
+}
+
+.botons:hover{
+  cursor: pointer;
+}
+
+.div-container{
+  width: 100%;
+  height: 8em;
+}
+
+
+
+
+.carousel-container{
+    position: relative;
+    bottom: 1em;
+    width: 100%;
+
+}
+
+.seccion-servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px; /* Altura del footer */
+    /* Resto de tus estilos */
+  }
+
+  .text-services{
+    text-align: left;
+  }
+
+  
+  .div-text-new {
+    max-width: 800px; /* O ajusta el ancho máximo que desees */
+    padding-bottom: 20px;
+    padding-top: 8em; /* Agrega espacio alrededor del contenido si es necesario */
+    
+  }
+
+  .title{
+font-size: 50px;
+font-family: "montserrat";
+text-align: left;
+margin-bottom: 1em;
+  }
+  
+  .subtitle{
+    font-family: "montserrat";
+    font-size: 26px;
+    text-align: left;
+
+  }
+
+
+
+.div-text-new{
+
+    width: 100%;
+    height: auto;
+}
+
+
+@media (min-width:1000px) {
+    .seccion-servicios{
+        width: 70%;
+        padding: 0;
+    }
+    .reunion-virtual {
+      font-size: 12px !important;
+    }
+    
+    
+
+    .div-text-new {
+        max-width: 100%; /* O ajusta el ancho máximo que desees */
+        padding-bottom: 20px;
+        padding-top: 8em; /* Agrega espacio alrededor del contenido si es necesario */
+        width: 100%;
+       
+      }
+
+      
+    }

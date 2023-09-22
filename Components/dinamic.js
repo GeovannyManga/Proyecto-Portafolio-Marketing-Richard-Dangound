@@ -22,7 +22,7 @@ fetch('http://localhost:3000/') // Asegúrate de que esta URL sea correcta y apu
       `;
 
       const img = document.createElement("img");
-      img.src = "../image/imagenes-13.png";
+      img.src = "../Image/imagenes-13.png";
       img.alt = blog.title;
 
       divContainer.appendChild(innerDiv);
@@ -30,6 +30,18 @@ fetch('http://localhost:3000/') // Asegúrate de que esta URL sea correcta y apu
 
       // Agregar el elemento al carrusel
       carrucelContent.appendChild(divContainer);
+
+      divContainer.addEventListener("click", () => {
+        // Llamar a la función para manejar el clic y hacer el desplazamiento
+        handleElementClick(blog._id);
+    
+        // Realizar el desplazamiento hacia arriba
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth" // Esto hará que el desplazamiento sea suave
+        });
+      });
+      
 
       // Agregar el manejador de eventos para el clic
       divContainer.addEventListener("click", () => handleElementClick(blog._id)); // Utiliza _id en lugar de id
@@ -41,6 +53,12 @@ fetch('http://localhost:3000/') // Asegúrate de que esta URL sea correcta y apu
     }
   })
   .catch(error => console.error('Error:', error));
+
+// Función para formatear la fecha
+function formatDate(dateString) {
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  return new Date(dateString).toLocaleDateString(undefined, options);
+}
 
 // Función para manejar el clic en el elemento
 function handleElementClick(id) {
@@ -55,16 +73,22 @@ function handleElementClick(id) {
   blogSubtitle.textContent = selectedBlog.title;
   text.textContent = selectedBlog.description;
 
-  // Actualizar solo el nombre del autor y mantener la imagen por defecto
+  // Formatear la fecha de creación
+  const formattedDate = formatDate(selectedBlog.createdAt);
+
+  // Actualizar el nombre del autor y mostrar la fecha formateada
   spanAutor.innerHTML = `
     ${selectedBlog.author}
     <img
       src="https://www.dzoom.org.es/wp-content/uploads/2020/02/portada-foto-perfil-redes-sociales-consejos.jpg"
       alt=""
-    />
+    /> <br><br>
+    <span>${formattedDate}</span>
   `;
 
   // Mostrar la información del blog
   console.log("Información del blog:", selectedBlog);
   // Aquí puedes mostrar la información en el lugar que necesites en tu página
 }
+
+

@@ -77,6 +77,13 @@
 
 
 
+i{
+  font-family: 'montserrat';
+  font-size: small;
+}
+
+
+
   
 
 
@@ -107,7 +114,7 @@ a{
 
 .lateralBar{
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   height: 100vh;
   width: 5em;
@@ -123,6 +130,7 @@ a{
   color: var(--color-background-blue);
   cursor: pointer;
 }
+
 
 
 
@@ -151,7 +159,7 @@ a{
   width: 24%;
   height: 60%;
   display: flex;
-  background-image: url(./Image/ORIGINAL\ \(1\)\ \(1\).png);
+  background-image: url(../../Image/ORIGINAL\ \(1\)\ \(1\).png);
   background-size: cover;
   background-repeat: no-repeat;
   font-size: 8px;
@@ -185,9 +193,9 @@ a{
   margin-top: auto;
   margin-bottom: auto;
   padding-top: 1.5px;
-  
-  
 }
+
+
 
 .div2-nav:hover{
   opacity: 0.8;
@@ -272,6 +280,10 @@ a{
     -webkit-box-orient: vertical;
 }
 
+
+.image-meet{
+  width: 44px;
+}
 
 
 
@@ -547,10 +559,13 @@ a{
     width: 18%;
     height: 68%;
   }
+  .reunion-virtual{
+    font-size: 8px;
+  }
 
   .image-meet {
     margin-top: 0.5%;
-    width: 54%;
+    width: 44%;
     height: 100%;
     
   }
@@ -617,6 +632,9 @@ background-color: #4063ffa9;
 @media (min-width: 1000px) {
 
 
+  
+
+
 
   .lateralBar{
     display: flex;
@@ -627,7 +645,7 @@ background-color: #4063ffa9;
   }
 
   .div2-nav{
-    width: 14%;
+    width: 16%;
    
   }
 
@@ -651,9 +669,13 @@ background-color: #4063ffa9;
   }
 
   .div2-nav span{
-    font-size: 16px;
+    font-size: 14px;
   }
   
+
+  .reunion-virtual{
+    font-size: 8px;
+  }
 }
 
 
@@ -682,4 +704,20 @@ background-color: #4063ffa9;
   .section-service {
     padding-top: 4em;
   }
+  .reunion-virtual{
+    font-size: 8px;
+  }
+
+  .div2-nav{
+    width: 14%;
+  }
+  .div2-nav span{
+    font-size: 16px;
+  }
+
+  .image-meet{
+
+    width: 46%;
+  }
+  
 }

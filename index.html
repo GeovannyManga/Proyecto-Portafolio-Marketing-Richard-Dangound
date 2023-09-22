@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-8RYSKQGZZ4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-8RYSKQGZZ4");
+    </script>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="./style.css" />
+    <meta
+      name="description"
+      content="Consultoría de Marketing: Maximiza tu presencia en línea, aumenta tus ventas y alcanza el éxito empresarial con nuestros servicios de marketing digital. ¡Contáctanos hoy!"
+    />
+    <link rel="icon" href="./Image/ICON (2).png" />
+    <link rel="stylesheet" href="./style.css?v=7.2" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Richard Dangoud</title>
   </head>
   <body>
     <main class="main" id="app">
@@ -13,22 +31,24 @@
       <nav class="Nav">
         <!-- primer contenedor del nav -->
 
-        <img id="div1-nav" onclick="contactSmooth()"
+        <img
+          onclick="clickload()"
+          id="div1-nav"
           src="./Image/ORIGINAL (1) (1).png"
           class="div1-nav"
+          alt="foto"
         />
 
         <!-- segundo contenedor del nav -->
         <a
+          target="_blank"
           href="https://calendly.com/richarddangoud/publicidad-digital"
           class="div2-nav"
         >
           <div class="image-meet"></div>
           <div class="meet">
-            <span>Solicitar</span>
-            <span
-              style="font-size: 6px; color: rgb(122, 118, 118)"
-              class="reunion-virtual"
+            <span class="soliciar">Solicitar</span>
+            <span style="color: rgb(122, 118, 118)" class="reunion-virtual"
               >Reunion Virtual</span
             >
           </div>
@@ -36,86 +56,188 @@
 
         <div class="div3-nav">
           <div class="menu"></div>
-          <a class="boton-contact"><div id="cont" >Contactame</div></a>
+          <div onclick="clickForm()" class="boton-contact">
+            <div id="cont">Contáctame</div>
+          </div>
         </div>
-        
       </nav>
       <div class="hamburguerBar">
         <ul>
-          <a  href="./Components/about.html" class="menu-link">
-            <img class="tarea" src="./Image/tarea.png" alt="">
+          <a href="./Components/about.html" class="menu-link">
+            <img class="tarea" src="./Image/tarea.png" alt="foto" />
             <li>SOBRE MI</li>
           </a>
           <a href="./Components/Blog.html" class="menu-link">
-            <img class="tarea" src="./Image/tarea.png" alt="">
+            <img class="tarea" src="./Image/tarea.png" alt="foto" />
             <li>BLOG</li>
           </a>
-          <a href="./Components/googleAds.html" class="menu-link">
-            <img class="tarea" src="./Image/tarea.png" alt="">
+          <a href="./Components/servicios.html" class="menu-link">
+            <img class="tarea" src="./Image/tarea.png" alt="foto" />
             <li>SERVICIOS</li>
           </a>
           <a href="./index.html" class="menu-link">
-            <img class="tarea" src="./Image/tarea.png" alt="">
+            <img class="tarea" src="./Image/tarea.png" alt="foto" />
             <li>INICIO</li>
           </a>
         </ul>
-        <button>Contactame</button>
+        <button onclick="clickForm()">Contactame</button>
       </div>
       <section class="home">
         <div class="img-content-home">
           <img
             class="image-abstracta"
-            src="./Image/imagenes-37.png"
+            src="./Image/Mockup_1.png"
             alt="decoration"
           />
         </div>
         <div class="content-text">
           <div class="content-h1-title">
             <h1 class="h1-title">
-              
-              TRAFICO DIGITAL<br />
-              <span>ESTRATÉGPICO</span>
+              TRÁFICO DIGITAL<br />
+              <span>ESTRATÉGICO</span>
             </h1>
           </div>
           <div class="div-span-leer-mas">
-           
-            ¡Bienvenido!<br> Soy Richard Dangoud,<br> Máster en Marketing Digital y te ayudaré<br> a diseñar campañas publicitarias digitales exitosas, que conecten con tu audiencia ideal e incrementen tus ventas de forma exponencial. 
-            Con enfoque creativo y datos precisos, elevaremos tu marca en el mundo digital, aumentando las ventas y tu presencia en línea. 
-            
+            ¡Bienvenido! Soy Richard Dangoud, Máster en Marketing Digital y te
+            ayudaré a diseñar campañas publicitarias digitales exitosas.
           </div>
 
           <div class="lateralBar">
             <ul>
-              <a  href="./Components/about.html" class="menu-link">
+              <a href="./Components/about.html" class="menu-link">
                 <li>SOBRE MI</li>
-                <img class="tarea" src="./Image/tarea.png" alt="">
+                <img class="tarea" src="./Image/tarea.png" alt="foto" />
               </a>
               <a href="./Components/Blog.html" class="menu-link">
                 <li>BLOG</li>
-                <img class="tarea" src="./Image/tarea.png" alt="">
+                <img class="tarea" src="./Image/tarea.png" alt="foto" />
               </a>
-              <a href="./Components/googleAds.html" class="menu-link">
+              <a href="./Components/servicios.html" class="menu-link">
                 <li>SERVICIOS</li>
-                <img class="tarea" src="./Image/tarea.png" alt="">
+                <img class="tarea" src="./Image/tarea.png" alt="foto" />
               </a>
               <a href="./index.html" class="menu-link">
                 <li>INICIO</li>
-                <img class="tarea" src="./Image/tarea.png" alt="">
+                <img class="tarea" src="./Image/tarea.png" alt="foto" />
               </a>
             </ul>
           </div>
-          
+
           <div class="arrow">
             <a class="a-arrow" href="#section-theme">hola</a>
           </div>
 
           <!-- seccion de los iconos de redes sociales -->
           <div class="seccion-of-icons-social-media">
-            <a href="https://api.whatsapp.com/send?phone=3023489662" class="social-media-icon" id="icons1"></a>
-            <a class="social-media-icon" id="icons2"></a>
-            <a class="social-media-icon" id="icons3"></a>
-            <a class="social-media-icon" id="icons4"></a>
-            <a class="social-media-icon" id="icons5"></a>
+            <a
+              href="https://api.whatsapp.com/send?phone=3023489662"
+              class="social-media-icon"
+              id="icons1"
+            ></a>
+            <a
+              href="https://www.instagram.com/richarddangoud/"
+              class="social-media-icon"
+              id="icons2"
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100095045424847"
+              class="social-media-icon"
+              id="icons3"
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/richarddangoud/"
+              class="social-media-icon"
+              id="icons4"
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-blog">
+        <div class="div-content-blog">
+          <div class="div-title-blog">
+            <h4 class="h1-blog">
+              Domina el Arte de la Publicidad Digital con un Toque Maestro
+            </h4>
+          </div>
+          <p class="p-blog">
+            ¡Bienvenido a un viaje emocionante a través del mundo de la
+            publicidad digital! Como experto con un máster en marketing digital,
+            estoy aquí para guiarte en cada paso del camino. La publicidad
+            digital se ha convertido en el motor de crecimiento para las
+            pequeñas y medianas empresas en la era actual. ¿Estás listo para
+            desbloquear su potencial al máximo? Imagina tu negocio brillando en
+            plataformas como Facebook, Instagram, TikTok y LinkedIn, capturando
+            la atención de tu audiencia ideal con anuncios creativos y
+            estratégicos. Aquí hay cinco beneficios que la publicidad digital
+            puede brindarte:
+          </p>
+        </div>
+        <div class="content-img">
+          <div id="blog1" class="blog">
+            <div class="border">
+              <img src="./Image/enviado.png" alt="logo" />
+            </div>
+            <span>Alcance</span>
+            <span>Hipersegmentado</span>
+            <p>
+              Llega directamente a las personas que más importan para tu
+              negocio. Di adiós a los anuncios genéricos. Con la publicidad
+              digital, puedes dirigirte a audiencias específicas según sus
+              intereses, demografía y comportamiento en línea.
+            </p>
+          </div>
+          <div id="blog2" class="blog">
+            <div class="border">
+              <img src="./Image/idea.png" alt="logo" />
+            </div>
+            <span>Resultados</span>
+            <span>Medibles</span>
+            <p>
+              Olvídate de las conjeturas. Con las herramientas adecuadas,
+              seguimos cada centavo invertido y cada interacción generada. Esto
+              significa que puedes ajustar tu estrategia en tiempo real para
+              obtener los mejores resultados posibles.
+            </p>
+          </div>
+          <div id="blog3" class="blog">
+            <div class="border">
+              <img src="./Image/cerebro-creativo (1).png" alt="logo" />
+            </div>
+            <span>Creatividad</span>
+            <span>Ilimitada</span>
+            <p>
+              Rompe las barreras de lo convencional. Los anuncios digitales te
+              permiten experimentar con imágenes, videos y copias para encontrar
+              la combinación perfecta que resuene con tu audiencia y deje una
+              marca duradera.
+            </p>
+          </div>
+          <div id="blog4" class="blog">
+            <div class="border">
+              <img src="./Image/objetivo (1).png" alt="logo" />
+            </div>
+            <span>Costo-</span>
+            <span>Eficiencia</span>
+            <p>
+              A diferencia de los medios tradicionales, la publicidad digital es
+              asequible para negocios de todos los tamaños. No importa si tienes
+              un presupuesto ajustado; podemos maximizar cada dólar para obtener
+              el mayor retorno posible.
+            </p>
+          </div>
+          <div id="blog5" class="blog">
+            <div class="border">
+              <img src="./Image/sin-conexion.png" alt="logo" />
+            </div>
+            <span>Conexiones</span>
+            <span>Valiosas</span>
+            <p>
+              La publicidad digital no solo se trata de ventas, sino también de
+              construir relaciones duraderas. Interactúa con tus clientes
+              potenciales, responde sus preguntas y construye una comunidad leal
+              en torno a tu marca.
+            </p>
           </div>
         </div>
       </section>
@@ -175,24 +297,51 @@
       <section class="secction-contact">
         <div id="form" class="div-content-contact-spans"></div>
         <div class="formularios">
-          <form class="form" action="submit">
+          <form class="form" id="myForm">
             <div class="div-primer-form">
               <span class="contact-form-span">Contactame</span>
-              <label style="color: white" for=""> Mi nombre es: </label>
-              <input type="text" placeholder="Tu Nombre" />
-              <label style="color: white" for=""> Mi E-Mail: </label>
-              <input type="text" placeholder="Tu E-Mail" />
+              <label style="color: white" for="nombre"> Mi nombre es: </label>
+              <input
+              type="text"
+              id="nombre"
+              placeholder="Tu Nombre"
+              oninput="validarNombre()"
+              />
+              <label style="color: white" for="email"> Mi E-Mail: </label>
+              <input
+              type="text"
+              id="email"
+              placeholder="Tu E-Mail"
+              oninput="validarEmail()"
+              />
             </div>
+            <div class="alert">
+              <span class="closebtn" onclick="closeAlert()">&times;</span>
+              <p>Tu información fue enviada con éxito. Pronto Richard Dangoud se pondrá en contacto contigo.</p>
+              <img src="./Image/marca-de-verificacion.png" alt="check">
+          </div>
+          
             <div class="div-segundo-form">
-              <label class="label" for=""> Asunto: </label>
-              <input type="text" placeholder="Asunto del mensaje" />
-              <label class="label" for=""> Proyecto: </label>
+              <label class="label" for="asunto"> Asunto: </label>
+              <select id="asunto" onchange="validarAsunto()">
+                <option value="" disabled selected>Selecciona el asunto</option>
+                <option value="Facebook Ads">Facebook Ads</option>
+                <option value="Google Ads">Google Ads</option>
+                <option value="Linkedin Ads">Linkedin Ads</option>
+                <option value="TikTok Ads">TikTok Ads</option>
+                <option value="Instagram Ads">Instagram Ads</option>
+                <option value="Otros...">Otros...</option>
+              </select>
+              <label class="label" for="proyecto"> Proyecto: </label>
               <input
                 class="proyecto-input"
                 type="text"
+                id="proyecto"
                 placeholder="Informacion del proyecto"
               />
-              <button type="submit">Enviar</button>
+              <button type="button" onclick="validarFormulario()">
+                Enviar
+              </button>
             </div>
           </form>
         </div>
@@ -200,47 +349,29 @@
       <section class="section-resumen">
         <span class="title-resumen">Resumen</span>
         <div class="content-grid-resumen">
-          <div class="grid1">
+          <a
+            href="https://calendly.com/richarddangoud/publicidad-digital"
+            class="grid1"
+          >
             <div class="flecha"></div>
             <div class="boton1"></div>
-          </div>
-          <div class="grid2">
+          </a>
+          <a href="./Components/about.html" class="grid2">
             <div class="flecha2"></div>
-          </div>
-          <div class="grid3">
+          </a>
+          <a href="#form" class="grid3">
             <div class="flecha3"></div>
-          </div>
+          </a>
         </div>
       </section>
-      <section class="section-blog">
-        <div class="div-content-blog">
-          <div class="div-title-blog">
-            <h4 class="h1-blog">Marketing para</h4>
-            <h4 class="h2-blog">Dominar tu nicho</h4>
-          </div>
-          <p class="p-blog">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius omnis
-            eos enim exercitationem tempora ratione minus quidem? Quaerat.
-            <br /><br />
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam,
-            suscipit!
-          </p>
-        </div>
-        <div class="content-img">
-          <img
-            class="img-blog"
-            src="./Image/Potencia Tus diseños.png"
-            alt="blog"
-          />
-        </div>
-      </section>
+
       <section class="section-comentarios">
         <div class="oponion-div">
           <div class="div-inter-opinion">
             <span>Opiniones</span>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
-              fugit.
+            <p style="margin-right: 1em">
+              Sumérgete en las experiencias compartidas por nuestros apreciados
+              clientes
             </p>
           </div>
           <img src="./Image/imagenes-23.png" alt="tweter" />
@@ -249,10 +380,10 @@
         <div class="coment-div">
           <div class="one">
             <div class="new-coment">
-              <span>Juan Roberto Anderson</span>
+              <span>Juan Altamarina</span>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Deserunt, optio.
+                Richard es un genio del marketing digital. ¡Impresionante
+                trabajo!
               </p>
             </div>
             <div class="start">
@@ -267,8 +398,8 @@
             <div class="new-coment">
               <span>Esteban Gonzales</span>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Deserunt, optio.
+                Gracias a Richard, nuestras ventas en línea están en auge. ¡Un
+                consultor increíble!
               </p>
             </div>
             <div class="start">
@@ -283,8 +414,8 @@
             <div class="new-coment">
               <span>Edward Ramirez</span>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Deserunt, optio.
+                Trabajar con Richard es un acierto. ¡Resultados rápidos y
+                efectivos!
               </p>
             </div>
             <div class="start">
@@ -297,11 +428,8 @@
           </div>
           <div class="four">
             <div class="new-coment">
-              <span>Juan Esteban</span>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Deserunt, optio.
-              </p>
+              <span>Carlos Guzman</span>
+              <p>Fue de mucha ayuda para mi negocio.</p>
             </div>
             <div class="start">
               <img src="./Image/estrella.png" alt="estrella" />
@@ -318,26 +446,26 @@
           <!-- pendiente -->
           <img src="./Image/lupa.png" alt="lupa" />
           <ul class="content-options">
-            <div>
-              <img class="img" src="./Image/tarea.png" alt="" />
+            <div class="div-link">
+              <img class="img" src="./Image/tarea.png" alt="foto" />
               <a href="./index.html">
                 <li class="lis">INICIO</li>
               </a>
             </div>
-            <div>
-              <img class="img" src="./Image/tarea.png" alt="" />
-              <a href="./Components/googleAds.html">
+            <div class="div-link">
+              <img class="img" src="./Image/tarea.png" alt="foto" />
+              <a href="./Components/servicios.html">
                 <li class="lis">SERVICIO</li>
               </a>
             </div>
-            <div>
-              <img class="img" src="./Image/tarea.png" alt="" />
+            <div class="div-link">
+              <img class="img" src="./Image/tarea.png" alt="foto" />
               <a href="./Components/Blog.html">
                 <li class="lis">BLOG</li>
               </a>
             </div>
-            <div>
-              <img class="img" src="./Image/tarea.png" alt="" />
+            <div class="div-link">
+              <img class="img" src="./Image/tarea.png" alt="foto" />
               <a href="./Components/about.html">
                 <li class="lis">SOBRE MI</li>
               </a>
@@ -345,7 +473,7 @@
           </ul>
           <div class="content-footer-logo">
             <img src="./Image/ORIGINAL (1).png" alt="logo" />
-            <a id="scrollToForm"><div>Contáctame</div></a>
+            <a onclick="clickForm()"><div>Contáctame</div></a>
           </div>
         </div>
       </footer>
@@ -375,139 +503,243 @@
           });
       });
 
-      document.addEventListener("DOMContentLoaded", () => {
-        const scrollToFormButton = document.getElementById("scrollToForm");
+      function clickload() {
+        const form = document.querySelector(".div1-nav");
+        console.log(form);
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
 
-        scrollToFormButton.addEventListener("click", (event) => {
-          event.preventDefault(); // Evita el comportamiento predeterminado del enlace
-          const formSection = document.getElementById("form");
-          window.scrollTo({
-            top: formSection.offsetTop,
-            behavior: "smooth",
-          });
+      function clickForm(event) {
+        const form = document.querySelector(".secction-contact");
+        var offset = 100;
+        window.scrollTo({
+          top: form.getBoundingClientRect().top + window.scrollY - offset, // Ajusta el desplazamiento
+          behavior: "smooth",
+        });
+      }
+
+      // Obtén todos los elementos 'a' con la clase 'menu-link'
+      const menuLinks = document.querySelectorAll(".menu-link");
+
+      // Agrega un evento a cada elemento 'a' para el evento 'mouseenter'
+      menuLinks.forEach((menuLink) => {
+        const imagenTarea = menuLink.querySelector(".tarea");
+        const text = menuLink.querySelector("li");
+        menuLink.addEventListener("mouseenter", () => {
+          imagenTarea.style.visibility = "visible";
+          text.style.color = "#4063FF";
+        });
+
+        // Agrega un evento para el evento 'mouseleave'
+        menuLink.addEventListener("mouseleave", () => {
+          imagenTarea.style.visibility = "hidden";
+          text.style.color = "black";
         });
       });
 
-      document.addEventListener("DOMContentLoaded", () => {
-        const scrollToFormButton = document.getElementById("cont");
+      // Llama a la función para activar el comportamiento
 
-        scrollToFormButton.addEventListener("click", (event) => {
-          event.preventDefault(); // Evita el comportamiento predeterminado del enlace
-          const formSection = document.getElementById("form");
-          window.scrollTo({
-            top: formSection.offsetTop,
-            behavior: "smooth",
-          });
+      const hamb = document.querySelectorAll(".menu-link");
+
+      // Agrega un evento a cada elemento 'a' para el evento 'mouseenter'
+      hamb.forEach((hamb) => {
+        const imagenTarea = hamb.querySelector(".tarea");
+        const text = hamb.querySelector("li");
+        hamb.addEventListener("mouseenter", () => {
+          imagenTarea.style.visibility = "visible";
+          text.style.color = "#4063FF";
+        });
+
+        // Agrega un evento para el evento 'mouseleave'
+        hamb.addEventListener("mouseleave", () => {
+          imagenTarea.style.visibility = "hidden";
+          text.style.color = "black";
         });
       });
 
-      document.addEventListener("DOMContentLoaded", () => {
-        const scrollToFormButton = document.getElementsByClassName("link");
+      const burguer = document.querySelector(".hamburguerBar");
+      const menu = document.querySelector(".menu");
 
-        scrollToFormButton.addEventListener("click", (event) => {
-          event.preventDefault(); // Evita el comportamiento predeterminado del enlace
-          const formSection = document.getElementById("form");
-          window.scrollTo({
-            top: formSection.offsetTop,
-            behavior: "smooth",
-          });
-        });
+      // Función para manejar el clic en el menú
+      menu.addEventListener("click", () => {
+        burguer.style.display = "flex";
+        if (menu) {
+          console.log("hola mundo");
+        }
       });
 
-      const contactSmooth = () => {
-  const scrollToFormButton = document.getElementById("div1-nav")
-  const formSection = document.getElementById("app");
+      // Función para manejar clics en cualquier parte del documento
+      document.addEventListener("click", (event) => {
+        if (event.target !== menu) {
+          burguer.style.display = "none";
+        }
+      });
 
-  scrollToFormButton.addEventListener("click", (event) => {
-    event.preventDefault(); // Evita el comportamiento predeterminado del enlace
-    formSection.scrollIntoView({ behavior: "smooth" });
-  });
-};
+      // Función para manejar el evento de cambio de tamaño de la ventana
+      function handleResize() {
+        if (window.innerWidth >= 640) {
+          burguer.style.display = "none"; // Ocultar hamburguesa en pantallas anchas
+        }
+        // No ocultar la hamburguesa en pantallas estrechas si ya está visible
+      }
 
-// Obtén todos los elementos 'a' con la clase 'menu-link'
-const menuLinks = document.querySelectorAll('.menu-link');
+      // Llama a handleResize inicialmente para configurar el estado inicial
+      handleResize();
 
-// Agrega un evento a cada elemento 'a' para el evento 'mouseenter'
-menuLinks.forEach((menuLink) => {
-  const imagenTarea = menuLink.querySelector('.tarea');
-  const text = menuLink.querySelector('li');
-  menuLink.addEventListener('mouseenter', () => {
-    imagenTarea.style.visibility = 'visible';
-    text.style.color = '#4063FF';
-  });
+      // Llama a handleResize cuando la ventana cambie de tamaño
+      window.addEventListener("resize", handleResize);
 
-  // Agrega un evento para el evento 'mouseleave'
-  menuLink.addEventListener('mouseleave', () => {
-    imagenTarea.style.visibility = 'hidden';
-    text.style.color = 'black';
-  });
-});
+      // Llama a handleResize inicialmente para configurar el estado inicial
+      handleResize();
 
+      // Llama a handleResize cuando la ventana cambie de tamaño
+      window.addEventListener("resize", handleResize);
 
-// Llama a la función para activar el comportamiento
+      let formularioValido = {
+        nombre: false,
+        email: false,
+        asunto: false,
+      };
 
-const hamb = document.querySelectorAll('.menu-link');
+      document
+        .getElementById("nombre")
+        .addEventListener("input", validarNombre);
+      document.getElementById("email").addEventListener("input", validarEmail);
+      document
+        .getElementById("asunto")
+        .addEventListener("input", validarAsunto);
+      document
+        .getElementById("proyecto")
+        .addEventListener("input", validarProyecto);
 
-// Agrega un evento a cada elemento 'a' para el evento 'mouseenter'
-hamb.forEach((hamb) => {
-  const imagenTarea = hamb.querySelector('.tarea');
-  const text = hamb.querySelector('li');
-  hamb.addEventListener('mouseenter', () => {
-    imagenTarea.style.visibility = 'visible';
-    text.style.color = '#4063FF';
-  });
+      function validarNombre() {
+        const nombreInput = document.getElementById("nombre");
+        const nombreValue = nombreInput.value.trim();
+        const nombreRegex = /^[A-Za-z\s]+$/;
 
-  // Agrega un evento para el evento 'mouseleave'
-  hamb.addEventListener('mouseleave', () => {
-    imagenTarea.style.visibility = 'hidden';
-    text.style.color = 'black';
-  });
-});
+        if (nombreValue === "" || !nombreRegex.test(nombreValue)) {
+          nombreInput.style.border = "1px solid red";
+          formularioValido.nombre = false;
+        } else {
+          nombreInput.style.border = "";
+          formularioValido.nombre = true;
+        }
+      }
 
+      function validarEmail() {
+        const emailInput = document.getElementById("email");
+        const emailValue = emailInput.value.trim();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  
+        if (emailValue === "" || !emailRegex.test(emailValue)) {
+          emailInput.style.border = "1px solid red";
+          formularioValido.email = false;
+        } else {
+          emailInput.style.border = "";
+          formularioValido.email = true;
+        }
+      }
 
-const burguer = document.querySelector(".hamburguerBar");
-const menu = document.querySelector(".menu");
+      function validarAsunto() {
+        const asuntoInput = document.getElementById("asunto");
+        const asuntoValue = asuntoInput.options[asuntoInput.selectedIndex].value;
+        console.log(asuntoValue)
 
-// Función para manejar el clic en el menú
-menu.addEventListener('click', () => {
-    burguer.style.display = "flex";
-    if (menu) {
-        console.log("hola mundo");
-    }
-});
+        if (asuntoValue === "") {
+          asuntoInput.style.border = "1px solid red";
+          formularioValido.asunto = false;
+        } else {
+          asuntoInput.style.border = "";
+          formularioValido.asunto = true;
+        }
+      }
 
-// Función para manejar clics en cualquier parte del documento
-document.addEventListener('click', (event) => {
-    if (event.target !== menu) {
-        burguer.style.display = "none";
-    }
-});
+      function validarProyecto() {
+        const proyectoInput = document.getElementById("proyecto");
+        const proyectoValue = proyectoInput.value.trim();
 
-// Función para manejar el evento de cambio de tamaño de la ventana
-function handleResize() {
-    if (window.innerWidth >= 640) {
-        burguer.style.display = "none"; // Ocultar hamburguesa en pantallas anchas
-    }
-    // No ocultar la hamburguesa en pantallas estrechas si ya está visible
+        // No se aplica ninguna validación específica al campo de proyecto
+
+        proyectoInput.style.border = ""; // Restablecer el borde
+        formularioValido.proyecto = true; // Marcar como válido
+      }
+
+      function limpiarFormulario() {
+        document.getElementById("myForm").reset();
+
+        // También debes restablecer los bordes y el estado de validación
+        document.getElementById("nombre").style.border = "";
+        document.getElementById("email").style.border = "";
+        document.getElementById("asunto").style.border = "";
+        document.getElementById("proyecto").style.border = "";
+
+        formularioValido = {
+          nombre: false,
+          email: false,
+          asunto: false,
+          proyecto: true, // El campo de proyecto se considera válido por defecto
+        };
+      }
+
+      function validarFormulario() {
+        validarNombre();
+        validarEmail();
+        validarAsunto();
+        validarProyecto();
+
+        if (
+          formularioValido.nombre &&
+          formularioValido.email &&
+          formularioValido.asunto
+        ) {
+          const objetoInformacion = {
+            name: document.getElementById("nombre").value.trim(),
+            email: document.getElementById("email").value.trim(),
+            asunto: document.getElementById("asunto").value.trim(),
+            proyecto: document.getElementById("proyecto").value.trim(),
+          };
+
+          // Enviar los datos al servidor
+          fetch("http://localhost:3000/createUser", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(objetoInformacion),
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              // Manejar la respuesta del servidor si es necesario
+              console.log(data);
+            })
+            .catch((error) => {
+              // Manejar errores de la solicitud
+              console.error("Error:", error);
+            });
+
+          // Limpiar el formulario después de enviar los datos
+          limpiarFormulario();
+          showSuccessAlert()
+        }
+      }
+
+      function closeAlert() {
+    var alert = document.querySelector(".alert");
+    alert.style.display = "none";
 }
 
-// Llama a handleResize inicialmente para configurar el estado inicial
-handleResize();
+// Mostrar la alerta (por ejemplo, después de enviar un formulario)
+function showSuccessAlert() {
+    var alert = document.querySelector(".alert");
+    alert.style.display = "block";
+    setTimeout(function() {
+      alert.style.display = "none";
+}, 5000); // Ejecutar después de 3 segundos
 
-// Llama a handleResize cuando la ventana cambie de tamaño
-window.addEventListener('resize', handleResize);
-
-
-// Llama a handleResize inicialmente para configurar el estado inicial
-handleResize();
-
-// Llama a handleResize cuando la ventana cambie de tamaño
-window.addEventListener('resize', handleResize);
-
-
-
+}
 
     </script>
   </body>

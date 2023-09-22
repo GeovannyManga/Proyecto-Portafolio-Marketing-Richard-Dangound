@@ -1,82 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-8RYSKQGZZ4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-8RYSKQGZZ4");
+    </script>
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Consultoría de Marketing: Maximiza tu presencia en línea, aumenta tus ventas y alcanza el éxito empresarial con nuestros servicios de marketing digital. ¡Contáctanos hoy!"
+    />
+    <link rel="icon" href="../Image/ICON (2).png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/servicios.module.css" />
-    <link rel="stylesheet" href="./styles/blog.module.css" />
-    <link rel="stylesheet" href="./styles/about.module.css">
+    <link rel="stylesheet" href="./styles/servicios.module.css?v=7.2" />
+    <link rel="stylesheet" href="./styles/about.module.css?v=7.2" />
     <title>Servicios</title>
   </head>
   <body>
     <nav class="Nav">
       <!-- primer contenedor del nav -->
 
-        <img onclick="clickHombe()"  src="../Image/ORIGINAL (1) (1).png" class="div1-nav" />
-     
+      <img
+        onclick="clickHombe()"
+        src="../Image/ORIGINAL (1) (1).png"
+        class="div1-nav"
+        alt="foto"
+      />
 
-        <!-- segundo contenedor del nav -->
+      <!-- segundo contenedor del nav -->
       <a
+        target="_blank"
         href="https://calendly.com/richarddangoud/publicidad-digital"
         class="div2-nav"
-        >
+      >
         <div class="image-meet"></div>
         <div class="meet">
-          <span>Solicitar</span>
-          <span
-          style="font-size: 6px; color: rgb(122, 118, 118)"
-          class="reunion-virtual"
-          >Reunion Virtual</span
+          <span class="solicitar">Solicitar</span>
+          <span style="color: rgb(122, 118, 118)" class="reunion-virtual"
+            >Reunion Virtual</span
           >
         </div>
       </a>
-      
+
       <div class="div3-nav">
         <div class="menu"></div>
-        <a href="../index.html#form" class="boton-contact"><div>Contactame</div></a>
+        <a href=".././index.html#form" class="boton-contact"
+          ><div>Contáctame</div></a
+        >
       </div>
-      
     </nav>
     <div class="hamburguerBar">
       <ul>
-        <a  href="./about.html" class="menu-link">
-          <img class="tarea" src="./Image/tarea.png" alt="">
+        <a href="./about.html" class="menu-link">
+          <img class="tarea" src="./Image/tarea.png" alt="foto" />
           <li>SOBRE MI</li>
         </a>
         <a href="./Blog.html" class="menu-link">
-          <img class="tarea" src="./Image/tarea.png" alt="">
+          <img class="tarea" src="./Image/tarea.png" alt="foto" />
           <li>BLOG</li>
         </a>
-        <a href="./googleAds.html" class="menu-link">
-          <img class="tarea" src="./Image/tarea.png" alt="">
+        <a href="./servicios.html" class="menu-link">
+          <img class="tarea" src="./Image/tarea.png" alt="foto" />
           <li>SERVICIOS</li>
         </a>
         <a href="../index.html" class="menu-link">
-          <img class="tarea" src="./Image/tarea.png" alt="">
+          <img class="tarea" src="./Image/tarea.png" alt="foto" />
           <li>INICIO</li>
         </a>
       </ul>
       <button>Contactame</button>
     </div>
 
+    <div class="lateralBar">
+      <ul>
+        <a href="./about.html" class="menu-link">
+          <li>SOBRE MI</li>
+          <img class="tarea" src="../Image/tarea.png" alt="foto" />
+        </a>
+        <a href="./Blog.html" class="menu-link">
+          <li>BLOG</li>
+          <img class="tarea" src="../Image/tarea.png" alt="foto" />
+        </a>
+        <a href="./servicios.html" class="menu-link">
+          <li>SERVICIOS</li>
+          <img class="tarea" src="../Image/tarea.png" alt="foto" />
+        </a>
+        <a href="../index.html" class="menu-link">
+          <li>INICIO</li>
+          <img class="tarea" src="../Image/tarea.png" alt="foto" />
+        </a>
+      </ul>
+    </div>
+
     <section class="section-service">
       <div class="lateralBar">
         <ul>
-          <a  href="./about.html" class="menu-link">
+          <a href="./about.html" class="menu-link">
             <li>SOBRE MI</li>
-            <img class="tarea" src="../Image/tarea.png" alt="">
+            <img class="tarea" src="../Image/tarea.png" alt="foto" />
           </a>
           <a href="./Blog.html" class="menu-link">
             <li>BLOG</li>
-            <img class="tarea" src="../Image/tarea.png" alt="">
+            <img class="tarea" src="../Image/tarea.png" alt="foto" />
           </a>
-          <a href="./googleAds.html" class="menu-link">
+          <a href="./servicios.html" class="menu-link">
             <li>SERVICIOS</li>
-            <img class="tarea" src="../Image/tarea.png" alt="">
+            <img class="tarea" src="../Image/tarea.png" alt="foto" />
           </a>
           <a href="../index.html" class="menu-link">
             <li>INICIO</li>
-            <img class="tarea" src="../Image/tarea.png" alt="">
+            <img class="tarea" src="../Image/tarea.png" alt="foto" />
           </a>
         </ul>
       </div>
@@ -86,31 +129,60 @@
         <h2 class="blog-subtitle">Dangoud</h2>
 
         <p class="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-          neque hic tempore, a veritatis cum minima? Iusto sit facilis ipsa
-          <br><br>
-          fuga, atque minima recusandae aliquam saepe ipsum quod quas
-          voluptatum? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          
+          ¡Hola, soy Richard Dangoud, un apasionado profesional en negocios
+          internacionales con un máster en marketing digital de la Universidad
+          Internacional de La Rioja en España! Permíteme presentarte la fórmula
+          perfecta para impulsar tu negocio en el mundo digital.<br><br> Imagina tener a
+          tu disposición a un consultor digital que no solo conoce los
+          entresijos del marketing en línea, sino que también tiene la destreza
+          y la experiencia para diseñar campañas publicitarias digitales que
+          hacen vibrar a tu audiencia. Eso soy yo, y estoy aquí para ayudarte a
+          alcanzar el éxito en línea de una manera que sea efectiva, amigable ¡y
+          hasta divertida!<br><br> ¿Mis fortalezas? ¡Son muchas! La estrategia es mi
+          segundo nombre, y cuando se trata de tráfico digital en redes
+          sociales, especialmente en Facebook e Instagram, conozco todos los
+          trucos del libro. Soy un maestro en la segmentación precisa, la
+          optimización de conversiones y la creación de contenido atractivo que
+          realmente conecta con tu audiencia.<br><br> Pero más allá de las habilidades,
+          lo que realmente me diferencia es mi enfoque humano. No soy solo un
+          profesional, soy un amigo que se preocupa por el éxito de tu negocio.
+          Mi objetivo es hacerte sentir cómodo y seguro a medida que trabajamos
+          juntos para aumentar tus ventas en internet. Siempre estaré aquí para
+          responder tus preguntas, brindarte apoyo y celebrar los logros
+          contigo.<br><br> Así que, ¿estás listo para dar el salto hacia el éxito
+          digital? ¡Yo también lo estoy! Juntos, podemos hacer que tus sueños en
+          línea se hagan realidad. Confía en mí, soy el amigo que necesitas para
+          triunfar en el emocionante mundo de la publicidad digital.
         </p>
         <div class="icons-redes">
-            <img src="../Image/imagenes-32.png" alt="">
-            <img src="../Image/imagenes-33.png" alt="">
-            <img src="../Image/imagenes-34.png" alt="">
-            <img src="../Image/imagenes-35.png" alt="">
-            <img src="../Image/imagenes-36.png" alt="">
+          <a href="https://wa.me/573160567270">
+            <img src="../Image/imagenes-32.png" alt="foto" />
+          </a>
+          <a href="https://www.instagram.com/richarddangoud/">
+            <img src="../Image/imagenes-33.png" alt="foto" />
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100095045424847">
+            <img src="../Image/facebook2.png" alt="foto" />
+          </a>
+          <a href="https://www.linkedin.com/in/richarddangoud/">
+            <img src="../Image/imagenes-35.png" alt="foto" />
+          </a>
         </div>
-        <div>
-        </div>
+        <div></div>
       </div>
-      <img style=" transform: scaleX(-1)" class="img-services" src="../Image/pngtree-businessman-character-illustration-young-in-elegant-suit-handsome-man-png-image_9278541.png" alt="" />
+      <div class="content-image">
+        <img
+          class="img-services"
+          src="../Image/Mockup_2.png"
+          alt="foto"
+        />
+      </div>
     </section>
     <script>
-      
       function clickHombe() {
-        window.location.href = '../index.html';
+        window.location.href = "../index.html";
       }
-      </script>
-      <script type="module" src="./Style.js"></script>
+    </script>
+    <script type="module" src="./Style.js"></script>
   </body>
 </html>

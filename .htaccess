@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^facebookads$ https://richarddangoud.com/Components/facebookAds.html [L]

@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8RYSKQGZZ4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8RYSKQGZZ4');
+</script>
     <meta charset="UTF-8" />
+    <link rel="icon" href="../Image/ICON (2).png">
+    <meta
+      name="description"
+      content="Consultoría de Marketing: Maximiza tu presencia en línea, aumenta tus ventas y alcanza el éxito empresarial con nuestros servicios de marketing digital. ¡Contáctanos hoy!"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/servicios.module.css" />
+    <link rel="stylesheet" href="./styles/servicios.module.css?v=7.2" />
+    <link rel="stylesheet" href="./styles/serviciosP.css?v=7.2" />
     <title>Servicios</title>
   </head>
   <body>
     <nav class="Nav">
       <!-- primer contenedor del nav -->
-
-      <img onclick="clickHome( )" src="../Image/ORIGINAL (1) (1).png" class="div1-nav">
-        
-    </img>
+      <img
+        onclick="clickHome()"
+        src="../Image/ORIGINAL (1) (1).png"
+        class="div1-nav"
+        alt="foto"
+      />
 
       <!-- segundo contenedor del nav -->
-      <a href="https://calendly.com/richarddangoud/publicidad-digital" class="div2-nav">
+      <a target="_blank"
+        href="https://calendly.com/richarddangoud/publicidad-digital"
+        class="div2-nav"
+      >
         <div class="image-meet"></div>
         <div class="meet">
           <span>Solicitar</span>
           <span
-            style="font-size: 6px; color: rgb(122, 118, 118)"
+            style=" color: rgb(122, 118, 118)"
             class="reunion-virtual"
             >Reunion Virtual</span
           >
@@ -29,163 +49,194 @@
 
       <div class="div3-nav">
         <div class="menu"></div>
-        <a class="boton-contact"><div>Contactame</div></a>
+        <a href=".././index.html#form" class="boton-contact">
+          <div>Contáctame</div>
+        </a>
       </div>
     </nav>
     <div class="hamburguerBar">
       <ul>
-        <a  href="./about.html" class="menu-link">
-          <img class="tarea" src="./Image/tarea.png" alt="">
+        <a href="./about.html" class="menu-link">
+          <img class="tarea" src="./Image/tarea.png" alt="foto" />
           <li>SOBRE MI</li>
         </a>
         <a href="./Blog.html" class="menu-link">
-          <img class="tarea" src="./Image/tarea.png" alt="">
+          <img class="tarea" src="./Image/tarea.png" alt="foto" />
           <li>BLOG</li>
         </a>
         <a href="./googleAds.html" class="menu-link">
-          <img class="tarea" src="./Image/tarea.png" alt="">
+          <img class="tarea" src="./Image/tarea.png" alt="foto" />
           <li>SERVICIOS</li>
         </a>
         <a href="../index.html" class="menu-link">
-          <img class="tarea" src="./Image/tarea.png" alt="">
+          <img class="tarea" src="./Image/tarea.png" alt="foto" />
           <li>INICIO</li>
         </a>
       </ul>
       <button>Contactame</button>
     </div>
 
-    <section class="section-service">
-      <div class="lateralBar">
-        <ul>
-          <a  href="./about.html" class="menu-link">
-            <li>SOBRE MI</li>
-            <img class="tarea" src="../Image/tarea.png" alt="">
-          </a>
-          <a href="./Blog.html" class="menu-link">
-            <li>BLOG</li>
-            <img class="tarea" src="../Image/tarea.png" alt="">
-          </a>
-          <a href="./googleAds.html" class="menu-link">
-            <li>SERVICIOS</li>
-            <img class="tarea" src="../Image/tarea.png" alt="">
-          </a>
-          <a href="../index.html" class="menu-link">
-            <li>INICIO</li>
-            <img class="tarea" src="../Image/tarea.png" alt="">
-          </a>
-        </ul>
-      </div>
-      <div class="div-content-blog-text">
-        <div class="title-blog">
-          <div class="div-image">
-            <img
-              class="img-title"
-              src="../Image/consultoria.png"
-              alt="icono-servicio"
-            />
-          </div>
-          <h1 class="text-title">Tik Tok Ads</h1>
-        </div>
-        <p class="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-          neque hic tempore, a veritatis cum minima? Iusto sit facilis ipsa
-          fuga, atque minima recusandae aliquam saepe ipsum quod quas
-          voluptatum? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          <br><br>
-          Nulla molestiae nesciunt omnis laborum. Tempora deleniti ducimus iusto
-          non quaerat tempore nesciunt quam vel minus? Assumenda, temporibus
-          debitis? Labore, sed incidunt!
-          lore
-        </p>
-      </div>
-      <img class="img-services" src="../Image/imagenes-01.png" alt="">
-      
-    </section>
-   <section id="section-theme" class="section-themes">
-  <div class="carousel-container">
-    <a href="facebookAds.html" class="div-container">
-      <img src="../Image/facebook.png" alt="rocket" />
-      <div>
-        <h1>Facebook Ads</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Delectus, pariatur?
-        </p>
-      </div>
-    </a>
-    <a href="googleAds.html" class="div-container">
-      <img src="../Image/google.png" alt="rocket" />
-      <div>
-        <h1>Google Ads</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Delectus, pariatur?
-        </p>
-      </div>
-    </a>
-    <a href="instagramAds.html" class="div-container">
-      <img src="../Image/instagram.png" alt="rocket" />
-      <div>
-        <h1>Instagram Ads</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Delectus, pariatur?
-        </p>
-      </div>
-    </a>
-    <a href="linkedinAds.html" class="div-container">
-      <img src="../Image/linkedin.png" alt="rocket" />
-      <div>
-        <h1>Linkedin Ads</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Delectus, pariatur?
-        </p>
-      </div>
-    </a>
-  </div>
-</section>
-<footer class="footer-main">
-  <div class="content-footer">
-    <!-- pendiente -->
-    <img src="../Image/lupa.png" alt="lupa" />
-    <ul class="content-options">
-      <div class="div-link">
-        <img class="img" src="../Image/tarea.png" alt="" />
-        <a href="../index.html" >
-          <li class="lis">INICIO</li>
+    <div class="lateralBar">
+      <ul>
+        <a href="./about.html" class="menu-link">
+          <li>SOBRE MI</li>
+          <img class="tarea" src="../Image/tarea.png" alt="foto" />
         </a>
-      </div>
-      <div class="div-link">
-        <img class="img" src="../Image/tarea.png" alt="" />
-        <a href="./googleAds.html">
-          <li class="lis">SERVICIO</li>
+        <a href="./Blog.html" class="menu-link">
+          <li>BLOG</li>
+          <img class="tarea" src="../Image/tarea.png" alt="foto" />
         </a>
-      </div>
-      <div class="div-link">
-        <img class="img" src="../Image/tarea.png" alt="" />
-        <a href="./Blog.html">
-          <li class="lis">BLOG</li>
+        <a href="./servicios.html" class="menu-link">
+          <li>SERVICIOS</li>
+          <img class="tarea" src="../Image/tarea.png" alt="foto" />
         </a>
-      </div>
-      <div class="div-link">
-        <img class="img" src="../Image/tarea.png" alt="" />
-        <a href="./about.html">
-          <li class="lis">SOBRE MI</li>
+        <a href="../index.html" class="menu-link">
+          <li>INICIO</li>
+          <img class="tarea" src="../Image/tarea.png" alt="foto" />
         </a>
-      </div>
-    </ul>
-    <div class="content-footer-logo">
-      <img src="../Image/ORIGINAL (1).png" alt="logo" />
-      <a href="../index.html#form"><div>Contáctame</div></a>
+      </ul>
     </div>
-  </div>
-</footer>
-  <script>
-     function clickHome() {
-  window.location.href = '../../index.html';
-}
-  </script>
-  <script type="module" src="./Style.js"></script>
+
+    <section class="seccion-servicios">
+      <div class="div-text-new">
+        <h1 class="title">TikTok Ads</h1>
+        <h2 class="subtitle">
+          Conquista TikTok: Tu Viaje al Éxito Digital con Publicidad Estratégica
+        </h2>
+      </div>
+      <span class="text-services">
+        En el vertiginoso mundo de las redes sociales, TikTok se ha convertido
+        en un <i>fenómeno imparable</i>. ¿Estás listo para aprovechar al máximo
+        esta plataforma y llevar tu presencia en línea al siguiente nivel?
+        Permíteme guiarte a través de por qué TikTok <i>es crucial</i> y cómo
+        puedes utilizarlo para dar un
+        <i>impulso significativo a tu negocio</i>.<br /><br />
+        <i>¿Qué es TikTok y Para Qué Sirve?</i>: TikTok es una plataforma de
+        redes sociales que permite a los usuarios
+        <i>crear, compartir y descubrir videos cortos. ¿Su propósito?</i>
+        <i>Conectar tu marca</i> con una audiencia diversa y comprometida de una
+        manera auténtica. Los beneficios son notables:<br /><br />
+        <i>Beneficios de la Publicidad en TikTok para tu Negocio:</i
+        ><br /><br />
+        <i>1. Alcance Masivo:</i> TikTok cuenta con más de mil millones de
+        usuarios activos en todo el mundo, brindándote acceso a una audiencia
+        global. Compromiso Creativo: La plataforma se centra en la creatividad,
+        lo que te permite conectar de manera emocional con tu audiencia a través
+        de videos atractivos y auténticos.<br /><br />
+        <i>2. Segmentación Precisa</i>: Puedes dirigir tus anuncios a grupos
+        demográficos específicos según intereses, ubicación y más, garantizando
+        que lleguen a las personas adecuadas.<br /><br />
+        <i>3. Resultados Medibles</i>: TikTok proporciona datos detallados de
+        rendimiento, lo que te permite evaluar el éxito de tus anuncios y
+        ajustar tu estrategia en tiempo real.<br /><br />
+        <i>Cifras que Impulsarán Tu Interés:</i><br /><br />
+        TikTok fue la aplicación más descargada en 2020, con más de 2 mil
+        millones de descargas.<br /><br />
+        Los usuarios promedio de TikTok pasan más de 50 minutos al día en la
+        plataforma.<br /><br />
+        La publicidad en TikTok tiene un retorno de inversión promedio del 30%
+        en comparación con otras plataformas de redes sociales.<br /><br />
+        En el panorama de las redes sociales en constante evolución, TikTok se
+        destaca como una <i>oportunidad emocionante para tu negocio</i>. Las
+        cifras hablan por sí solas: es la plataforma donde debes estar. Descubre
+        cómo mi servicio de promoción en TikTok puede llevar
+        <i>tu marca al siguiente nivel</i>.<br /><br />
+        <a href="../index.html#form"
+          ><i>¡Potencia tu marca en TikTok Hoy Mismo! 🚀</i>
+        </a>
+      </span>
+    </section>
+
+    <section id="section-theme" class="section-themes">
+      <div class="carousel-container">
+        <a href="facebookAds.html" class="div-container">
+          <img src="../Image/facebook.png" alt="rocket" />
+          <div>
+            <h1>Facebook Ads</h1>
+            <p>
+              Llega a tu audiencia objetivo en la red social más grande con
+              anuncios personalizados.
+            </p>
+            <button class="botons" href="">Leer mas</button>
+          </div>
+        </a>
+        <a href="googleAds.html" class="div-container">
+          <img src="../Image/google.png" alt="rocket" />
+          <div>
+            <h1>Google Ads</h1>
+            <p>
+              Aprovecha búsquedas activas para promocionar tu negocio en los
+              resultados de búsqueda y sitios asociados.
+            </p>
+            <button class="botons" href="">Leer mas</button>
+          </div>
+        </a>
+        <a href="linkedinAds.html" class="div-container">
+          <img src="../Image/linkedin.png" alt="rocket" />
+          <div>
+            <h1>Linkedin Ads</h1>
+            <p>
+              Dirige tus anuncios a profesionales y empresas en la principal red
+              para networking laboral.
+            </p>
+            <button class="botons" href="">Leer mas</button>
+          </div>
+        </a>
+        <a href="instagramAds.html" class="div-container">
+          <img src="../Image/instagram.png" alt="rocket" />
+          <div>
+            <h1>Instagram Ads</h1>
+            <p>
+              Inspira con contenido visual atractivo y llega a una audiencia
+              global en Instagram.
+            </p>
+            <button class="botons" href="">Leer mas</button>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer-main">
+      <div class="content-footer">
+        <!-- pendiente -->
+        <img src="../Image/lupa.png" alt="lupa" />
+        <ul class="content-options">
+          <div class="div-link">
+            <img class="img" src="../Image/tarea.png" alt="foto" />
+            <a href="../index.html">
+              <li class="lis">INICIO</li>
+            </a>
+          </div>
+          <div class="div-link">
+            <img class="img" src="../Image/tarea.png" alt="foto" />
+            <a href="./servicios.html">
+              <li class="lis">SERVICIO</li>
+            </a>
+          </div>
+          <div class="div-link">
+            <img class="img" src="../Image/tarea.png" alt="foto" />
+            <a href="./Blog.html">
+              <li class="lis">BLOG</li>
+            </a>
+          </div>
+          <div class="div-link">
+            <img class="img" src="../Image/tarea.png" alt="foto" />
+            <a href="./about.html">
+              <li class="lis">SOBRE MI</li>
+            </a>
+          </div>
+        </ul>
+        <div class="content-footer-logo">
+          <img src="../Image/ORIGINAL (1).png" alt="logo" />
+          <a href="../index.html#form"><div>Contáctame</div></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function clickHome() {
+        window.location.href = "../../index.html";
+      }
+    </script>
+    <script type="module" src="./Style.js"></script>
   </body>
 </html>
