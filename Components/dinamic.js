@@ -2,7 +2,7 @@
 let blogData;
 
 // Realizar la petición a la API
-fetch('http://localhost:3000/') // Asegúrate de que esta URL sea correcta y apunte a tu API
+fetch('https://snowy-firefly-4334.fly.dev/') // Asegúrate de que esta URL sea correcta y apunte a tu API
   .then(response => response.json())
   .then(data => {
     blogData = data; // Almacena los datos en la variable

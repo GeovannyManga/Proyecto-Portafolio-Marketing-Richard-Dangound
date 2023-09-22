@@ -451,6 +451,7 @@ padding-right: 10%;
 
 
 .section-themes {
+  position: relative; /* Cambiamos a position: relative */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 2em;
@@ -458,12 +459,11 @@ padding-right: 10%;
   justify-content: center;
   padding: 2em;
   align-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 80px;
+  margin: 2em auto 0; /* Reducimos margin-top y centralizamos verticalmente */
   background-color: #eff0f5;
- 
+  z-index: 0;
 }
+
 
 .div1, .div2, .div3, .div4, .div5, .div6 {
   
@@ -787,127 +787,35 @@ color: black;
   
 }
 
-.section-blog{
+.section-blog {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 2em; /* Eliminamos margin-top y centralizamos verticalmente */
   background-color: var(--color-Background);
   width: 100%;
-  height: 72em;
-  margin-top: 2em;
+  height: auto; /* Cambiamos a altura automática */
   padding-top: 2em;
   flex-direction: column;
 }
 
 
+
 .content-img{
-  height: 16em;
+  height: auto;
   justify-items: center;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-
- 
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 1em;
-  row-gap: 3em;
-  color: var(--color-white);
-  margin-top: 6em;
-
-}
-
-.blog{
- border: none;
-  height: 100%;
-  width: 100%;
-  background-image: url(./Image/imagenes-07.png);
-  backdrop-filter:  brightness(0.5); ;
-  background-position: center;
-  background-size:120%;
-  background-repeat: no-repeat;
-  border-radius: 12px;
-  text-align: center;
-  padding-top: 4em;
-  display:flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-
-
   
-}
+  font-size: 20px;
+  padding-left: 1em;
 
-.blog p{
-  font-size: 8px;
-  text-align: justify;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  color: rgb(219, 228, 243);
-  margin-top: 1em;
-  margin-bottom: 2em;
-  
-}
-
-.blog span{
-  font-size: 16px;
-}
-
-.border{
-  width: 80px;
-  height: 80px;
-  justify-content: center;
-  align-items: center;
-  background-color: #10100F;
-  margin-top: -6em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0.5em;
-  border-radius: 50%;
-}
-
-.blog img{
-  width: 50px;
-  height: 50px;
-  margin-left: auto;
-  margin-right: auto;
- 
- 
-margin: 1em;
-
-  border-radius: 10%;
-}
-
-#blog1{
-  grid-column: 1;
-  
 
 }
 
-#blog2{
-  grid-column: 2;
-  
-}
-
-#blog3{
-  
-  grid-column: 2 ;
-  grid-row: 1;
-}
-
-#blog4{
-  grid-row: 2;
-  grid-column: 1;
-    
-}
-#blog5{
-
-  grid-column: 1 / span 2;
-  grid-row: 3;
-  width: 50%;
-    
+.div-content-blog{
+  width: auto;
+  height: auto;
+  position: relative;
 }
 
 
@@ -1193,6 +1101,10 @@ margin: 1em;
     height: 66em;
   }
 
+  .section-themes{
+    margin: 10em 0em;
+  }
+
   .div1-nav{
     width: 20%;
   }
@@ -1218,6 +1130,9 @@ margin: 1em;
   margin-top: 2em;
   width: 100%;
   height: 74em;
+}
+.section-themes{
+  margin-top: 56em;
 }
 
 }
@@ -1365,6 +1280,7 @@ padding-left: 4%;
     margin: 1em;
     padding-left: 10em;
     overflow-x: scroll;
+  
   }
   .section-themes::-webkit-scrollbar {
     width: 0.5em;
@@ -1441,44 +1357,6 @@ padding-left: 4%;
     margin-right: auto;
    
   
-   
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    gap: 1em;
-    color: var(--color-white);
-    margin-top: 6em;
-  
-  }
-
-  #blog1{
-    grid-column: 1 / 2;
-    
-  
-  }
-  
-  #blog2{
-    grid-column: 2 / 3;
-    
-  }
-  
-  #blog3{
-    
-    grid-column: 3 /4 ;
-  }
-  
-  #blog4{
-  
-    grid-column: 4 / 5;
-    grid-row: 1;
-    
-      
-  }
-  #blog5{
-  grid-row: 1;
-    grid-column: 5 / 6;
-    width: 100%;
-      
   }
   
   .blog p{
@@ -1573,10 +1451,11 @@ padding-left: 4%;
     padding: 1em;
     margin-top: 2em;
     width: 80%;
-    height: 30em;
+    height: auto;
     margin-bottom: 5em;
     margin-left: auto;
     margin-right: auto;
+    margin: 4em 0em;
    
    
 }
@@ -1592,6 +1471,7 @@ padding-left: 4%;
       padding: 0;
       padding-top: 1em;
       row-gap: 0;
+      margin: auto;
     }
   
   
@@ -1736,7 +1616,8 @@ height: 30em;
   display: flex;
   margin-top: 2em;
   width: 100%;
-  height: 42em;
+  height: auto;
+  
 }
 
 .img-blog{
